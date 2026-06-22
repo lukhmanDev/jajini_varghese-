@@ -1,0 +1,47 @@
+/*-- 1. VARIABLES --*/
+
+$heading-font: "Cormorant Garamond", serif;
+$theme-font: "Inter", sans-serif;
+$body-font: "Inter", sans-serif;
+
+$primary: #F8C8DC;
+
+$gray: (
+  100: #f2f2f2,
+  200: #d7d7d7,
+  300: #989898,
+  400: #808080,
+);
+
+$black: #000000;
+$dark: #1E1E1E;
+$white: #ffffff;
+
+%flh {
+  height: auto;
+  clear: both;
+}
+
+%all-section {
+  width: 100%;
+  position: relative;
+}
+
+%bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+%extra {
+  position: absolute;
+  content: "";
+}
+
+%flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+$bezier: cubic-bezier(0.48, 0, 0.48, 1);

@@ -1,0 +1,72 @@
+/*-- 2. MIXIN --*/
+
+@mixin transition($transition) {
+  transition: $transition;
+  -webkit-transition: $transition;
+  -o-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+}
+
+@mixin transform($property) {
+  transform: $property;
+}
+
+@keyframes shake {
+ 0% {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+ }
+
+ 20% {
+  -webkit-transform: translate(-2px, 2px);
+  transform: translate(-2px, 2px);
+ }
+
+ 40% {
+  -webkit-transform: translate(-2px, -2px);
+  transform: translate(-2px, -2px);
+ }
+
+ 60% {
+  -webkit-transform: translate(2px, 2px);
+  transform: translate(2px, 2px);
+ }
+
+ 80% {
+  -webkit-transform: translate(2px, -2px);
+  transform: translate(2px, -2px);
+ }
+
+ 100% {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+ }
+}
+
+@keyframes headerAnimationUp {
+  0% {
+    transform: translateY(0);
+  }
+  35% {
+      transform: translateY(-100%);
+  }
+  50% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(-88px);
+  }
+}
+
+@keyframes headerAnimationDown {
+  0% {
+    transform: translateY(-88px);
+  }
+  50% {
+      transform: translateY(-88px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}

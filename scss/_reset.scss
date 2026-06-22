@@ -1,0 +1,301 @@
+/*------------------------------------
+  4. RESET & BASE STYLES
+------------------------------------*/
+
+html {
+  overflow-x: hidden;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  font-family: $body-font;
+  color: #565d6f;
+  background-color: $white;
+  position: relative;
+  z-index: 1;
+  @include transition(all 0.3s ease);
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba($black, 0.5);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $black;
+    outline: 1px solid $black;
+  }
+}
+
+[data-scroll-container] {
+  overflow: hidden;
+}
+
+[data-scroll-section] {
+  position: relative;
+}
+
+/*------------------------------------
+  TYPOGRAPHY
+------------------------------------*/
+
+h1 {
+  font-family: $heading-font;
+  font-size: clamp(2.5rem, 6vw, 72px);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: $body-font;
+  font-size: clamp(1.25rem, 3vw, 20px);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+a, button, input, select, textarea, optgroup {
+  font-family: $body-font;
+  @include transition(all 0.3s ease);
+}
+
+p, li {
+  @include transition(all 0.3s ease);
+  font-family: $body-font;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  line-height: inherit;
+}
+
+p {
+  margin-bottom: 15px;
+  line-height: 2;
+  font-weight: normal;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+  line-height: 2;
+  margin: 0;
+  padding: 0;
+}
+
+a, button {
+  text-decoration: none;
+  color: inherit;
+  outline: none !important;
+  box-shadow: none !important;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.digits {
+    font-family: "Noto Sans", sans-serif;
+}
+
+.page-link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  font-size: 0;
+}
+
+/*------------------------------------
+  IMAGES & SVG
+------------------------------------*/
+
+img, svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+/*------------------------------------
+  UTILITIES
+------------------------------------*/
+
+.is_relative {
+  position: relative;
+}
+
+.o-hidden {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.align-center {
+  align-items: center;
+}
+
+section, div, footer {
+  scroll-margin-top: 150px;
+}
+
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+/*------------------------------------
+  STRUCTURE
+------------------------------------*/
+
+section,
+header,
+footer,
+main {
+  @extend %all-section;
+  @extend %flh;
+  position: relative;
+}
+
+/*------------------------------------
+  CONTAINERS
+------------------------------------*/
+
+@mixin make-container {
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include respond-above(sm) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @include respond-above(md) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @include respond-above(tab) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  @include respond-above(laptop) {
+    padding-left: 3.125rem; // 50px
+    padding-right: 3.125rem;
+  }
+}
+
+.custom-container {
+  @include make-container();
+}
+
+.mainContent {
+  padding: 30px 0;
+
+  @include respond-above(sm) {
+    padding: 50px 0;
+  }
+
+  @include respond-above(desktop) {
+    padding: 100px 0;
+  }
+}
+
+/*------------------------------------
+  TRANSITIONS
+------------------------------------*/
+
+body, h1, h2, h3, h4, h5, h6,
+p, a, button, input, select, textarea, img, svg {
+  @include transition(all 0.3s ease);
+}
+
+
+/*------------------------------------
+  THEME BUTTON
+------------------------------------*/
+
+.button-box {
+  justify-content: center;
+  .link {
+    font-size: 15px;
+    font-weight: 500;
+    color: $dark;
+    font-family: $body-font;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    i {
+      color: currentColor;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+button,
+.btn,
+.cta-btn,
+.btn-outline-premium {
+  font-family: $body-font;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+
+  @include respond-below(tab) {
+    margin-bottom: 50px;
+  }
+}
+
+.mt-100 {
+  margin-top: 100px;
+
+  @include respond-below(tab) {
+    margin-top: 50px;
+  }
+}

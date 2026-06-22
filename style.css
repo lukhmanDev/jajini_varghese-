@@ -1,0 +1,12 @@
+.treatment-page-content .icon-block .icon-wrapper .icon-item {
+    text-align: left;
+}
+
+.treatment-page-content .icon-block .icon-wrapper .icon-item .icon {
+    margin: 0 0;
+    margin-bottom: 30px;
+}
+
+.treatment-page-content .icon-block .icon-wrapper .icon-item .text p {
+    text-align-last: left;
+}

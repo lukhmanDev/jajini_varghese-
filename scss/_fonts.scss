@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'MinervaModern';
+    src: url('../fonts/MinervaModern-Black.woff2') format('woff2'),
+        url('../fonts/MinervaModern-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MinervaModern';
+    src: url('../fonts/MinervaModern-Regular.woff2') format('woff2'),
+        url('../fonts/MinervaModern-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MinervaModern';
+    src: url('../fonts/MinervaModern-Bold.woff2') format('woff2'),
+        url('../fonts/MinervaModern-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
