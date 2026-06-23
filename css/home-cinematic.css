@@ -153,14 +153,7 @@ html, body {
 .content-fade-in {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: transform, opacity;
-}
-
-.content-fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.2s; 
 }
 
 .label-caps {
@@ -921,6 +914,8 @@ html.lenis, html.lenis body {
 .treatment-section,
 .testimonial-parallax-root,
 .research-section {
+  position: relative;
+  z-index: 15;
   background-color: #ffffff !important;
   color: #1e1e1e !important;
 }
@@ -1033,5 +1028,111 @@ html.lenis, html.lenis body {
   background-color: #1e1e1e !important;
   color: #ffffff !important;
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* ===== Before & After Slider Overhaul Styles ===== */
+.before-after-slider {
+  position: relative;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .before-after-slider {
+    max-width: 1200px;
+  }
+}
+
+.before-after-slider .slider-item {
+  position: relative;
+  width: 100%;
+}
+
+.before-after-slider .twentytwenty-container {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.before-after-slider .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: 10;
+  left: 0;
+  padding: 0 10px;
+}
+
+.before-after-slider .owl-nav button {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid rgba(213, 109, 132, 0.2) !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease !important;
+}
+
+.before-after-slider .owl-nav button:hover {
+  background-color: #d56d84 !important;
+  border-color: #d56d84 !important;
+  transform: scale(1.05);
+}
+
+.before-after-slider .owl-nav button:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.before-after-slider .owl-nav button img {
+  width: 20px;
+  height: 20px;
+  transition: filter 0.3s ease;
+}
+
+.before-after-slider .owl-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.before-after-slider .owl-dots .owl-dot span {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(213, 109, 132, 0.25) !important;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.before-after-slider .owl-dots .owl-dot.active span {
+  width: 24px;
+  border-radius: 4px;
+  background-color: #d56d84 !important;
+}
+
+.bg-premium-badge {
+  background-color: #d56d84 !important;
+  color: #ffffff !important;
+  padding: 8px 20px !important;
+  font-family: var(--font-body);
+  font-size: 0.85rem !important;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  border-radius: 30px !important;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(213, 109, 132, 0.2);
 }
 

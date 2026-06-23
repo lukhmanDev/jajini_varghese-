@@ -86,6 +86,11 @@
       }
     }
   } else {
+    // Hide main header initially so it can fade in nicely
+    const mainHeader = document.querySelector('header.main-header');
+    if (mainHeader) {
+      gsap.set(mainHeader, { opacity: 0, y: -20 });
+    }
     // If elements don't exist, execute site functions immediately
     setTimeout(initSite, 100);
   }
@@ -363,7 +368,7 @@
     const dots = gsap.utils.toArray('.progress-dot');
     const videoBg = document.getElementById('video-bg-layer');
 
-    let activeIndex = 0;
+    let activeIndex = -1;
 
     // A. Cross-fade background videos based on current section
     function activateSection(index) {
@@ -387,14 +392,26 @@
         dot.classList.toggle('active', parseInt(dot.dataset.step, 10) === index);
       });
 
-      // Trigger text visibility transition
+      // Trigger text visibility transition in sync with video transitions
       sections.forEach((sec, i) => {
         const content = sec.querySelector('.content-fade-in');
         if (content) {
           if (i === index) {
-            content.classList.add('visible');
+            gsap.to(content, {
+              opacity: 1,
+              y: 0,
+              duration: 1,
+              ease: 'power2.out',
+              overwrite: 'auto'
+            });
           } else {
-            content.classList.remove('visible');
+            gsap.to(content, {
+              opacity: 0,
+              y: i < index ? -20 : 20,
+              duration: 1,
+              ease: 'power2.out',
+              overwrite: 'auto'
+            });
           }
         }
       });
@@ -415,8 +432,13 @@
 
     // B. Staggered Text Reveals for section text content on initial scroll
     sections.forEach((sec) => {
-      const header = sec.querySelector('h1, h2');
-      const paragraphs = sec.querySelectorAll('p, .label-caps, .btn-outline-premium, div');
+      const content = sec.querySelector('.content-fade-in');
+      const wrapper = content ? content.firstElementChild : null;
+      if (!wrapper) return;
+
+      const header = wrapper.querySelector('h1, h2');
+      // Safely select only top-level direct child text/button elements within the content wrapper
+      const paragraphs = Array.from(wrapper.children).filter(el => el.tagName !== 'H1' && el.tagName !== 'H2');
 
       if (header || paragraphs.length) {
         const tl = gsap.timeline({
@@ -477,7 +499,7 @@
       // Animate Section 2 text out
       pinTimeline.to('#section-2 .content-fade-in', {
         opacity: 0,
-        yPercent: -20,
+        yPercent: -100,
         ease: 'power1.inOut'
       }, 0);
 

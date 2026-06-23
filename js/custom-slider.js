@@ -143,4 +143,48 @@ $(document).ready(function () {
       swiper: thumbSwiper,
     },
   });
+
+  // Before & After Homepage Slider
+  $('.before-after-slider').owlCarousel({
+    loop: true,
+    margin: 24,
+    nav: true,
+    navText: [
+      '<span class="nav-btn prev"><img src="' + baseUrl + 'images/arrow-left.svg"></span>',
+      '<span class="nav-btn next"><img src="' + baseUrl + 'images/arrow-right.svg"></span>',
+    ],
+    dots: true,
+    autoplay: false, // Don't autoplay since users want to interact with twentytwenty handle
+    mouseDrag: false, // Disable dragging on the carousel itself to prevent conflicts with the twentytwenty handle
+    touchDrag: false,
+    pullDrag: false,
+    smartSpeed: 600,
+    responsive: {
+      0: {
+        items: 1
+      },
+      992: {
+        items: 3
+      }
+    },
+    onInitialized: function() {
+      // Initialize twentytwenty inside the slider once the carousel is initialized
+      $(".before-after-slider .twentytwenty-container").twentytwenty({
+        default_offset_pct: 0.5,
+        orientation: 'horizontal'
+      });
+    },
+    onTranslated: function() {
+      // Re-trigger window resize to ensure twentytwenty recalculates correct dimensions of images in active slides
+      $(window).trigger('resize');
+    }
+  });
+
+  // Fallback direct initialization for non-slider pages
+  if ($(".twentytwenty-container").length && !$(".before-after-slider").length) {
+    $(".twentytwenty-container").twentytwenty({
+      default_offset_pct: 0.5,
+      orientation: 'horizontal'
+    });
+  }
 });

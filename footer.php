@@ -70,21 +70,27 @@
                     <div class="footer-social-block">
                         <h4>Follow our Socials</h4>
                         <div class="social-wrap">
-                            <a class="social-links" href="#">
+                            <a class="social-links" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                 <span class="svgContainer">
-                                    <span class="icon"><img src="<?php echo $base_url; ?>images/facebook.svg" alt="Facebook" class="svg"></span>
+                                    <span class="icon"><i class="fab fa-facebook-f text-white" style="font-size: 18px;"></i></span>
                                 </span>
                                 <span class="bg"></span>
                             </a>
-                            <a class="social-links" href="#">
+                            <a class="social-links" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                 <span class="svgContainer">
-                                    <span class="icon"><img src="<?php echo $base_url; ?>images/twitter.svg" alt="Twitter" class="svg"></span>
+                                    <span class="icon"><i class="fab fa-instagram text-white" style="font-size: 18px;"></i></span>
                                 </span>
                                 <span class="bg"></span>
                             </a>
-                            <a class="social-links" href="#">
+                            <a class="social-links" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                 <span class="svgContainer">
-                                    <span class="icon"><img src="<?php echo $base_url; ?>images/linkedin.svg" alt="linkedin" class="svg"></span>
+                                    <span class="icon"><i class="fab fa-linkedin-in text-white" style="font-size: 18px;"></i></span>
+                                </span>
+                                <span class="bg"></span>
+                            </a>
+                            <a class="social-links" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                                <span class="svgContainer">
+                                    <span class="icon"><i class="fab fa-x-twitter text-white" style="font-size: 18px;"></i></span>
                                 </span>
                                 <span class="bg"></span>
                             </a>
@@ -116,6 +122,22 @@
 <script src="<?php echo $base_url; ?>js/theme-script.js?v=<?php echo time(); ?>"></script>
 
 
+
+<!-- Floating Social Sidebar (Sticky on Desktop) -->
+<div class="sticky-social-bar">
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="social-icon x-twitter" aria-label="X (Twitter)">
+        <i class="fab fa-x-twitter"></i>
+    </a>
+</div>
 
 </body>
 </html>

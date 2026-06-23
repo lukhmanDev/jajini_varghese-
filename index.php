@@ -4,15 +4,7 @@
 
 <main>
 
-<!-- Intro Video Preloader -->
-<div id="intro-preloader">
-  <div class="preloader-video-wrapper">
-    <video id="intro-video" autoplay muted playsinline>
-      <source src="video/logo animation.mp4" type="video/mp4">
-    </video>
-  </div>
-  <button id="skip-intro-btn" type="button">Skip Intro</button>
-</div>
+
 
 <!-- Three.js Canvas Container -->
 <div id="three-container">
@@ -52,7 +44,7 @@
         </h1>
         
         <!-- Increased qualifications text size to 20px -->
-        <div class="mb-4 label-caps" style="font-size: 20px; opacity: 0.9; color: #fff; letter-spacing: 0.05em;">
+        <div class="mb-4 label-caps" style="font-size: 20px; opacity: 0.9; color: #fff; letter-spacing: 0.05em; text-transform: none;">
           MBBS, MPhil, PhD(Cantab) FRCS(Plast)
         </div>
         
@@ -73,11 +65,7 @@
     </div>
     
     <!-- Centered scroll hint container -->
-    <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 d-flex flex-column align-items-center gap-2 d-none d-lg-flex" style="z-index: 15;">
-      <div class="scroll-hint-track" style="height: 32px;">
-        <div class="scroll-hint-fill"></div>
-      </div>
-    </div>
+    
 </section>
 
   <!-- Section 1: Intro -->
@@ -121,8 +109,8 @@
                     <div class="section-title">
                         <p>Our One-Stop Breast Clinic is designed to provide rapid assessment, reassurance, and, where needed, timely onward care. During a single visit, you will have a consultation, expert clinical examination, state-of-the-art breast imaging, and, if required, a biopsy — all carried out in one place to minimise waiting and uncertainty.</p>
                         <div class="button-box d-flex mt-5">
-                            <a href="diagnosis-and-prevention.php" class="link">
-                                Diagnosis and prevention  <i class="fas fa-caret-right"></i>
+                            <a href="diagnosis-and-prevention.php" class="btn btn-outline-premium">
+                                Diagnosis and prevention 
                             </a>
                         </div>
                     </div>
@@ -136,24 +124,7 @@
 
 
 
-    <!-- section 5 -->
-    <section class="container-fluid mainContent video-block">
-
-        <div class="container custom-container">
-
-            <div class="row">
-
-                <div class="col-12">
-
-                    <video src="video/about-in.mp4" autoplay="" playsinline="" muted="" loop=""></video>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
+   
 
 
 
@@ -234,7 +205,7 @@
 
                 </div>
 
-                <div class="slider-item"><a href="images/gallery-08.jpg"><img src="images/gallery-08.jpg"
+                <div class="slider-item"><a href="images/gallery-02.jpg"><img src="images/gallery-02.jpg"
 
                             alt="gallery"></a></div>
 
@@ -250,7 +221,7 @@
 
                 </div>
 
-                <div class="slider-item"><a href="images/gallery-09.jpg"><img src="images/gallery-09.jpg"
+                <div class="slider-item"><a href="images/gallery-04.jpg"><img src="images/gallery-04.jpg"
 
                             alt="gallery"></a></div>
 
@@ -306,120 +277,81 @@
 
     </section>
 
-
-
-
-
-    <!-- section 7 -->
-    <section class="container-fluid mainContent cta-section cta-sc-home" data-aos="fade-up">
-
-        <div class="cta-wrap">
-
-            <div class="bg-img">
-
-                <img src="images/cta-background.jpg" alt="footer background">
-
+     <!-- section 5 -->
+    <section class="container-fluid mainContent video-block" style="background-color: #FFF5F7 !important; padding: 100px 0 !important;">
+        <div class="container custom-container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="title" style="font-family: var(--font-display); font-size: clamp(2rem, 4vw, 48px); font-weight: 700; color: #1e1e1e; margin-bottom: 15px;">
+                        Before &amp; After Showcase
+                    </h2>
+                    <p style="font-family: var(--font-body); font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto;">
+                        View actual surgical results illustrating precision reconstruction and aesthetic refinement.
+                    </p>
+                </div>
             </div>
-
-            <div class="cta-content">
-
-                <div class="meta-block">
-
-                    <div class="section-title">
-
-                        <h2 class="title">Book a <br> Consultation</h2>
-
+            <div class="row">
+                <div class="col-12 m-auto">
+                    <!-- Before-After Slider -->
+                    <div class="owl-carousel owl-theme before-after-slider">
+                        <!-- Slide 1 -->
+                        <div class="slider-item">
+                            <div class="twentytwenty-container">
+                                <img src="images/treatments/therapeutic-mammoplasty/client-1-before.jpg" alt="Before" />
+                                <img src="images/treatments/therapeutic-mammoplasty/client-1-after.jpg" alt="After" />
+                            </div>
+                            <div class="case-label text-center mt-3">
+                                <span class="bg-premium-badge">Case 1: Therapeutic Mammoplasty</span>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="slider-item">
+                            <div class="twentytwenty-container">
+                                <img src="images/treatments/therapeutic-mammoplasty/client-2-before.jpg" alt="Before" />
+                                <img src="images/treatments/therapeutic-mammoplasty/client-2-after.jpg" alt="After" />
+                            </div>
+                            <div class="case-label text-center mt-3">
+                                <span class="bg-premium-badge">Case 2: Therapeutic Mammoplasty</span>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="slider-item">
+                            <div class="twentytwenty-container">
+                                <img src="images/treatments/therapeutic-mammoplasty/client-3-before.jpg" alt="Before" />
+                                <img src="images/treatments/therapeutic-mammoplasty/client-3-after.jpg" alt="After" />
+                            </div>
+                            <div class="case-label text-center mt-3">
+                                <span class="bg-premium-badge">Case 3: Therapeutic Mammoplasty</span>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="slider-item">
+                            <div class="twentytwenty-container">
+                                <img src="images/treatments/therapeutic-mammoplasty/client-4-before.jpg" alt="Before" />
+                                <img src="images/treatments/therapeutic-mammoplasty/client-4-after.jpg" alt="After" />
+                            </div>
+                            <div class="case-label text-center mt-3">
+                                <span class="bg-premium-badge">Case 4: Therapeutic Mammoplasty</span>
+                            </div>
+                        </div>
                     </div>
-
-                    <p>Treat yourself to a beautiful appearance and <br>the self-confidence to match.</p>
-
-
-
-                    <a class="cta-btn" href="#">Book a consultation <i><img src="images/btn-icon.svg" class="svg"
-
-                                alt="call"></i></a>
-
                 </div>
-
-
-
-                <div class="meta-connect">
-
-                    <h3>Send us a message or give us a call. <br> we're eager to help however we can!</h3>
-
-                </div>
-
             </div>
-
         </div>
-
     </section>
+
+
+
+
+
+   
 
 
 
 
 
     <!-- section 8 -->
-    <section class="container-fluid mainContent offer-section" data-aos="fade-up">
-
-        <div class="container custom-container">
-
-            <div class="row align-center">
-
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-
-                    <div class="content-block">
-
-                        <!-- <p>I offer care that is centred on compassion, clarity, and personalised treatment. I believe
-
-                            every patient should feel listened to, supported, and fully informed, with care tailored to
-
-                            their individual needs.</p> -->
-
-                       <!--  <p>“As a female surgeon trained in both breast cancer and plastic surgery, I understand how
-
-                            personal decisions around breast health and body image can be. I take time to explain all
-
-                            surgical and reconstructive options clearly, so patients can make confident, informed
-
-                            choices.”</p> -->
-
-                      <!--   <p>Whether surgery is for medical or cosmetic reasons, I try and provide honest guidance,
-
-                            realistic expectations, and thoughtful care, always focused on the wellbeing of the whole
-
-                            person.</p> -->
-                            <h3 class="title" data-aos="fade-up">“I understand how personal, decisions around breast health and body image can be. I take time to explain all surgical and reconstructive options clearly, so patients can make confident, informed choices.”</h3>
-                             <div class="button-box d-flex mt-5">
-
-                                <a href="#" class="link">
-
-                                    Procedures <i class="fas fa-caret-right"></i>
-
-                                </a>
-
-                            </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-
-                    <div class="img-block">
-
-                        <img src="images/offer-sc.jpg" alt="">
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
+    
 
 
 
@@ -566,7 +498,54 @@
         </div>
 
     </section>
+    
 
+
+
+     <!-- section 7 -->
+    <section class="container-fluid mainContent cta-section cta-sc-home" data-aos="fade-up">
+
+        <div class="cta-wrap">
+
+            <div class="bg-img">
+
+                <img src="images/cta-background.jpg" alt="footer background">
+
+            </div>
+
+            <div class="cta-content">
+
+                <div class="meta-block">
+
+                    <div class="section-title">
+
+                        <h2 class="title">Book a <br> Consultation</h2>
+
+                    </div>
+
+                    <p>Treat yourself to a beautiful appearance and <br>the self-confidence to match.</p>
+
+
+
+                    <a class="cta-btn" href="#">Book a consultation <i><img src="images/btn-icon.svg" class="svg"
+
+                                alt="call"></i></a>
+
+                </div>
+
+
+
+                <div class="meta-connect">
+
+                    <h3>Send us a message or give us a call. <br> we're eager to help however we can!</h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
 
@@ -705,6 +684,9 @@
 <!-- CDNs for Three.js and Lenis -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<!-- twentytwenty plugin -->
+<script src="plugins/twentytwenty/js/jquery.event.move.js"></script>
+<script src="plugins/twentytwenty/js/jquery.twentytwenty.js"></script>
 <!-- Main Cinematic & Overhaul Controller -->
 <script src="js/home-cinematic-v2.js?v=<?php echo time(); ?>"></script>
 

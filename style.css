@@ -10,3 +10,63 @@
 .treatment-page-content .icon-block .icon-wrapper .icon-item .text p {
     text-align-last: left;
 }
+
+/* Sticky Floating Social Sidebar */
+.sticky-social-bar {
+    position: fixed;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 9999;
+}
+
+.sticky-social-bar .social-icon {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(12, 12, 12, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sticky-social-bar .social-icon:hover {
+    transform: translateY(-3px) scale(1.08);
+    color: #ffffff;
+    border-color: rgba(248, 200, 220, 0.8);
+    box-shadow: 0 8px 25px rgba(248, 200, 220, 0.35);
+}
+
+/* Hover background colors for each platform */
+.sticky-social-bar .social-icon.facebook:hover {
+    background-color: #1877f2;
+}
+
+.sticky-social-bar .social-icon.instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.sticky-social-bar .social-icon.linkedin:hover {
+    background-color: #0077b5;
+}
+
+.sticky-social-bar .social-icon.x-twitter:hover {
+    background-color: #000000;
+}
+
+/* Hide on mobile and tablets to keep viewport clean */
+@media (max-width: 991px) {
+    .sticky-social-bar {
+        display: none !important;
+    }
+}
