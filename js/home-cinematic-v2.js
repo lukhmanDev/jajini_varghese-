@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   // -------------------------------------------------------------
@@ -21,6 +21,7 @@
     initScrollAnimations();
     init3DTilt();
     initTestimonialVideo();
+    initAwardsSlider();
 
     // Trigger header fade-in and Section 0 staggered entrance
     gsap.timeline()
@@ -30,7 +31,7 @@
 
   function fadeOutPreloader() {
     if (!preloader) return;
-    
+
     // Fade out preloader and scale it up slightly for organic feel
     gsap.to(preloader, {
       opacity: 0,
@@ -53,7 +54,7 @@
       // Ensure header starts visible
       document.querySelector('header.main-header').style.opacity = '1';
       document.querySelector('header.main-header').style.transform = 'translateY(0)';
-      
+
       // Delay initialization slightly to let document settle
       setTimeout(initSite, 100);
     } else {
@@ -133,7 +134,7 @@
       // Add helper class to HTML
       document.documentElement.classList.add('lenis-smooth');
     }
-      
+
     // Fallback scroll tracker for scroll velocity when Lenis is disabled (e.g. mobile)
     let lastScrollTime = Date.now();
     let lastScrollPosition = window.scrollY;
@@ -142,12 +143,12 @@
       const pos = window.scrollY;
       const dt = Math.max(now - lastScrollTime, 1);
       const dy = pos - lastScrollPosition;
-      
+
       if (!lenis) {
         currentScrollY = pos;
         scrollVelocity = (dy / dt) * 30; // approximate scroll velocity
       }
-      
+
       lastScrollTime = now;
       lastScrollPosition = pos;
     }, { passive: true });
@@ -163,6 +164,12 @@
     const canvas = document.getElementById('three-bg-canvas');
     const container = document.getElementById('three-container');
     if (!canvas || !container) return;
+
+    // Performance Optimization: Disable Three.js on mobile/tablet viewports (< 992px)
+    if (window.innerWidth < 992) {
+      container.style.display = 'none';
+      return;
+    }
 
     // A. Setup Scene and Camera
     scene = new THREE.Scene();
@@ -184,13 +191,13 @@
       textureCanvas.width = 64;
       textureCanvas.height = 64;
       const ctx = textureCanvas.getContext('2d');
-      
+
       const gradient = ctx.createRadialGradient(32, 32, 0, 32, 32, 32);
       gradient.addColorStop(0, 'rgba(255, 255, 255, 1)');
       gradient.addColorStop(0.3, 'rgba(248, 200, 220, 0.85)');
       gradient.addColorStop(0.7, 'rgba(248, 200, 220, 0.25)');
       gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
-      
+
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, 64, 64);
       return new THREE.CanvasTexture(textureCanvas);
@@ -266,6 +273,11 @@
     function animate() {
       requestAnimationFrame(animate);
 
+      // Performance Optimization: Skip calculations and rendering when Three.js container is hidden
+      if (container.style.visibility === 'hidden' || container.style.opacity === '0') {
+        return;
+      }
+
       const time = clock.getElapsedTime();
 
       // Decay velocity smoothly
@@ -279,7 +291,7 @@
       // 2. Smoothly lerp rotation to tilt towards the mouse coordinate
       mouseX += (targetMouseX - mouseX) * 0.05;
       mouseY += (targetMouseY - mouseY) * 0.05;
-      
+
       particleSystem.rotation.y += mouseX * 0.005;
       particleSystem.rotation.x -= mouseY * 0.003;
 
@@ -297,15 +309,15 @@
         const z = originalPositions[i * 3 + 2];
 
         // Normalize direction
-        const d = Math.sqrt(x*x + y*y + z*z);
+        const d = Math.sqrt(x * x + y * y + z * z);
         const nx = x / d;
         const ny = y / d;
         const nz = z / d;
 
         // Wave formula blending sine frequencies (creates organic "cell" breathing)
-        const wave = Math.sin(nx * 3.5 + time * morphSpeed) * 
-                     Math.cos(ny * 3.2 + time * morphSpeed) * 
-                     Math.sin(nz * 2.8 + time * morphSpeed) * amplitude;
+        const wave = Math.sin(nx * 3.5 + time * morphSpeed) *
+          Math.cos(ny * 3.2 + time * morphSpeed) *
+          Math.sin(nz * 2.8 + time * morphSpeed) * amplitude;
 
         // Scale coordinates along normal direction
         const currentRadius = radius + wave + Math.sin(time * 0.6 + i * 0.01) * 0.05;
@@ -322,14 +334,14 @@
         const x = originalMeshPositions[i * 3];
         const y = originalMeshPositions[i * 3 + 1];
         const z = originalMeshPositions[i * 3 + 2];
-        const d = Math.sqrt(x*x + y*y + z*z);
+        const d = Math.sqrt(x * x + y * y + z * z);
         const nx = x / d;
         const ny = y / d;
         const nz = z / d;
 
-        const wave = Math.sin(nx * 3.5 + time * morphSpeed) * 
-                     Math.cos(ny * 3.2 + time * morphSpeed) * 
-                     Math.sin(nz * 2.8 + time * morphSpeed) * amplitude;
+        const wave = Math.sin(nx * 3.5 + time * morphSpeed) *
+          Math.cos(ny * 3.2 + time * morphSpeed) *
+          Math.sin(nz * 2.8 + time * morphSpeed) * amplitude;
 
         const currentRadius = 2.78 + wave + Math.sin(time * 0.6 + i * 0.05) * 0.04;
         meshArr[i * 3] = nx * currentRadius;
@@ -373,12 +385,12 @@
     // A. Cross-fade background videos based on current section
     function activateSection(index) {
       if (index === activeIndex) return;
-      
+
       // Update videos opacity
       videos.forEach((vid, i) => {
         if (i === index) {
           vid.classList.add('active');
-          vid.play().catch(() => {});
+          vid.play().catch(() => { });
         } else {
           vid.classList.remove('active');
           setTimeout(() => {
@@ -463,15 +475,75 @@
     const section4 = document.getElementById('section-4');
     const section4Content = document.getElementById('section-4-content');
 
-    if (section2 && section4 && videoBg) {
-      const pinTimeline = gsap.timeline({
-        scrollTrigger: {
+    if (section2 && videoBg) {
+      if (section4 && section4Content) {
+        const pinTimeline = gsap.timeline({
+          scrollTrigger: {
+            trigger: '#section-2',
+            start: 'bottom bottom',
+            end: '+=100%',
+            scrub: 1,
+            pin: true,
+            pinSpacing: false,
+            onEnter: () => {
+              gsap.set(videoBg, { className: 'cinematic-video-container gsap-active' });
+              gsap.to('#three-container', { opacity: 1, duration: 0.3 });
+            },
+            onLeave: () => {
+              // Hide cinematic assets once we leave dark area
+              gsap.to([videoBg, '#three-container'], { opacity: 0, visibility: 'hidden', duration: 0.4 });
+              // Pause videos
+              videos.forEach(v => v.pause());
+            },
+            onEnterBack: () => {
+              // Re-show cinematic assets
+              gsap.to([videoBg, '#three-container'], { opacity: 1, visibility: 'visible', duration: 0.4 });
+              // Play active index video
+              if (videos[activeIndex]) {
+                videos[activeIndex].play().catch(() => { });
+              }
+            },
+            onLeaveBack: () => {
+              gsap.set(videoBg, { className: 'cinematic-video-container' });
+            }
+          }
+        });
+
+        // Animate Section 2 text out
+        pinTimeline.to('#section-2 .content-fade-in', {
+          opacity: 0,
+          yPercent: -100,
+          ease: 'power1.inOut'
+        }, 0);
+
+        // Scale, blur and dissolve the background videos + Three.js sphere
+        pinTimeline.to([videoBg, '#three-container'], {
+          scale: 1.06,
+          filter: 'blur(25px)',
+          opacity: 0,
+          ease: 'power1.inOut'
+        }, 0);
+
+        // Hide progress dots
+        pinTimeline.to('.scroll-progress', {
+          opacity: 0,
+          pointerEvents: 'none',
+          ease: 'power1.inOut'
+        }, 0);
+
+        // Slide in Section 4 content smoothly
+        pinTimeline.fromTo(section4Content,
+          { opacity: 0, yPercent: 25 },
+          { opacity: 1, yPercent: 0, ease: 'power2.out' },
+          0
+        );
+      } else {
+        // Fallback ScrollTrigger when section-4 is commented out/removed
+        ScrollTrigger.create({
           trigger: '#section-2',
           start: 'bottom bottom',
-          end: '+=100%',
+          end: '+=10%',
           scrub: 1,
-          pin: true,
-          pinSpacing: false,
           onEnter: () => {
             gsap.set(videoBg, { className: 'cinematic-video-container gsap-active' });
             gsap.to('#three-container', { opacity: 1, duration: 0.3 });
@@ -479,51 +551,26 @@
           onLeave: () => {
             // Hide cinematic assets once we leave dark area
             gsap.to([videoBg, '#three-container'], { opacity: 0, visibility: 'hidden', duration: 0.4 });
+            // Hide progress dots
+            gsap.to('.scroll-progress', { opacity: 0, pointerEvents: 'none', duration: 0.4 });
             // Pause videos
             videos.forEach(v => v.pause());
           },
           onEnterBack: () => {
             // Re-show cinematic assets
             gsap.to([videoBg, '#three-container'], { opacity: 1, visibility: 'visible', duration: 0.4 });
+            // Re-show progress dots
+            gsap.to('.scroll-progress', { opacity: 1, pointerEvents: 'auto', duration: 0.4 });
             // Play active index video
             if (videos[activeIndex]) {
-              videos[activeIndex].play().catch(() => {});
+              videos[activeIndex].play().catch(() => { });
             }
           },
           onLeaveBack: () => {
             gsap.set(videoBg, { className: 'cinematic-video-container' });
           }
-        }
-      });
-
-      // Animate Section 2 text out
-      pinTimeline.to('#section-2 .content-fade-in', {
-        opacity: 0,
-        yPercent: -100,
-        ease: 'power1.inOut'
-      }, 0);
-
-      // Scale, blur and dissolve the background videos + Three.js sphere
-      pinTimeline.to([videoBg, '#three-container'], {
-        scale: 1.06,
-        filter: 'blur(25px)',
-        opacity: 0,
-        ease: 'power1.inOut'
-      }, 0);
-
-      // Hide progress dots
-      pinTimeline.to('.scroll-progress', {
-        opacity: 0,
-        pointerEvents: 'none',
-        ease: 'power1.inOut'
-      }, 0);
-
-      // Slide in Section 4 content smoothly
-      pinTimeline.fromTo(section4Content,
-        { opacity: 0, yPercent: 25 },
-        { opacity: 1, yPercent: 0, ease: 'power2.out' },
-        0
-      );
+        });
+      }
     }
 
     // D. Zoom Parallax for Section 5 Video Card
@@ -608,6 +655,53 @@
         }
       });
     });
+
+    // H. Automatic transition on click/touch for first three sections
+    const firstThreeSections = document.querySelectorAll('#section-0, #section-1, #section-2');
+    const scrollTargets = {
+      'section-0': '#section-1',
+      'section-1': '#section-2',
+      'section-2': '.gallery-section'
+    };
+
+    firstThreeSections.forEach(sec => {
+      // Background click/touch handler
+      sec.addEventListener('click', (e) => {
+        // Exclude any interactive elements like links, buttons, scroll indicators, etc.
+        if (e.target.closest('a, button, input, textarea, .scroll-hint-wrapper')) return;
+
+        const targetSelector = scrollTargets[sec.id];
+        if (targetSelector) {
+          const target = document.querySelector(targetSelector);
+          if (target) {
+            if (lenis) {
+              lenis.scrollTo(target, { offset: 0, duration: 1.5 });
+            } else {
+              target.scrollIntoView({ behavior: 'smooth' });
+            }
+          }
+        }
+      });
+    });
+
+    // Scroll hint button click handler
+    document.querySelectorAll('.scroll-hint-wrapper').forEach(wrapper => {
+      wrapper.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const targetSelector = wrapper.dataset.target;
+        if (targetSelector) {
+          const target = document.querySelector(targetSelector);
+          if (target) {
+            if (lenis) {
+              lenis.scrollTo(target, { offset: 0, duration: 1.5 });
+            } else {
+              target.scrollIntoView({ behavior: 'smooth' });
+            }
+          }
+        }
+      });
+    });
   }
 
   // -------------------------------------------------------------
@@ -639,8 +733,8 @@
         const y = e.clientY - rect.top;
         const xc = rect.width / 2;      // element center
         const yc = rect.height / 2;
-        
-        const rotateX = ((yc - y) / yc) * 12; 
+
+        const rotateX = ((yc - y) / yc) * 12;
         const rotateY = ((x - xc) / xc) * 12;
 
         gsap.to(card, {
@@ -707,10 +801,10 @@
         const y = e.clientY - rect.top;
         const xc = rect.width / 2;      // element center
         const yc = rect.height / 2;
-        
+
         // Calculate rotational angle based on cursor distance from center
         // limit rotation to 12 degrees max
-        const rotateX = ((yc - y) / yc) * 12; 
+        const rotateX = ((yc - y) / yc) * 12;
         const rotateY = ((x - xc) / xc) * 12;
 
         gsap.to(card, {
@@ -753,8 +847,126 @@
             duration: 0.5,
             overwrite: 'auto'
           });
-        }
+        }        // end if (inner)
+      });        // end mouseleave
+    });          // end querySelectorAll forEach
+  }              // end init3DTilt
+
+  // -------------------------------------------------------------
+  // 6.5. PREMIUM AWARD CAROUSEL
+  // — 5 slots fill full width, center is always highlighted
+  // — steps one badge every 2 s with smooth CSS transitions
+  // ─────────────────────────────────────────────────────────────
+  function initAwardsSlider() {
+    const outer = document.getElementById('awardsInfinite');
+    const track = document.getElementById('awardsTrack');
+    if (!outer || !track) return;
+
+    const ORIG = 5;    // original badge count
+    const SETS = 4;    // total copies = 20 items (plenty for any screen)
+
+    // ── Build the repeated track ──────────────────────────────
+    const originals = Array.from(track.children);
+    for (let s = 0; s < SETS - 1; s++) {
+      originals.forEach(item => {
+        const clone = item.cloneNode(true);
+        clone.setAttribute('aria-hidden', 'true');
+        track.appendChild(clone);
       });
+    }
+
+    const TRANS_MS  = 700;  // CSS transition duration (ms)
+    let slotW       = 0;
+    let centerIdx   = ORIG + 2; // set-B item-2 starts in center
+    let autoTimer   = null;
+    let isAnimating = false;
+
+    // ── Apply translateX (animated or instant) ────────────────
+    function applyPosition(animated) {
+      const tx = -((centerIdx - 2) * slotW);
+      track.style.transition = animated
+        ? `transform ${TRANS_MS}ms cubic-bezier(0.4, 0, 0.2, 1)`
+        : 'none';
+      track.style.transform  = `translateX(${tx}px)`;
+    }
+
+    // ── Set .pos-center / .pos-near classes ───────────────────
+    function updateClasses() {
+      const badges = Array.from(track.querySelectorAll('.award-badge-wrap'));
+      badges.forEach((badge, i) => {
+        const dist = Math.abs(i - centerIdx);
+        badge.classList.remove('pos-center', 'pos-near');
+        if      (dist === 0) badge.classList.add('pos-center');
+        else if (dist === 1) badge.classList.add('pos-near');
+      });
+    }
+
+    // ── Shine sweep fires once per center entry ───────────────
+    function triggerShine() {
+      const badges = track.querySelectorAll('.award-badge-wrap');
+      const center = badges[centerIdx];
+      if (!center) return;
+      const shine = center.querySelector('.award-shine-sweep');
+      if (!shine) return;
+      shine.style.animation = 'none';
+      void shine.offsetWidth;                              // force reflow
+      shine.style.animation = `awardShine 0.80s ease-out 0.1s forwards`;
+    }
+
+    // ── Single step ───────────────────────────────────────────
+    function slide() {
+      if (isAnimating) return;
+      isAnimating = true;
+
+      centerIdx++;
+      applyPosition(true);
+      updateClasses();
+      triggerShine();
+
+      setTimeout(() => {
+        // Seamless loop: after one full set has scrolled past, jump back
+        if (centerIdx >= ORIG * 2 + 2) {
+          centerIdx -= ORIG;
+          applyPosition(false);   // instant — invisible to viewer
+        }
+        isAnimating = false;
+      }, TRANS_MS + 50);
+    }
+
+    // ── Size slots & badges to exactly 1/5 of outer width ─────
+    function layout() {
+      slotW = Math.floor(outer.offsetWidth / 5);
+      const badgeW = Math.round(slotW * 0.60);
+
+      track.querySelectorAll('.award-track-item').forEach(item => {
+        item.style.width      = slotW + 'px';
+        item.style.flexShrink = '0';
+        item.style.flexGrow   = '0';
+      });
+
+      track.querySelectorAll('.award-badge-wrap').forEach(wrap => {
+        wrap.style.width  = badgeW + 'px';
+        wrap.style.height = badgeW + 'px';
+      });
+
+      applyPosition(false);
+      updateClasses();
+    }
+
+    function start() {
+      clearInterval(autoTimer);
+      layout();
+      autoTimer = setInterval(slide, 2000);
+    }
+
+    // Wait for DOM to settle before measuring
+    setTimeout(start, 120);
+
+    // Re-layout on resize
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => { clearInterval(autoTimer); start(); }, 200);
     });
   }
 
@@ -776,3 +988,7 @@
   }
 
 })();
+
+
+
+

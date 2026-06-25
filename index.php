@@ -12,282 +12,403 @@
 </div>
 
 
-<!-- Scroll progress dots navigation -->
+<!-- Scroll progress dots navigation
 <div class="scroll-progress">
   <button type="button" class="progress-dot active" data-step="0" aria-label="Hero"></button>
   <button type="button" class="progress-dot" data-step="1" aria-label="About"></button>
   <button type="button" class="progress-dot" data-step="2" aria-label="Ethos"></button>
-</div>
+</div> -->
 
 <div class="home-cinematic-wrapper">
   <!-- Fixed video background Layer -->
-  <div class="cinematic-video-container" id="video-bg-layer">
-    <video class="video-sequence active" data-index="0" autoplay loop muted playsinline>
-      <source src="video/jajini.mp4" type="video/mp4">
-    </video>
-    <video class="video-sequence" data-index="1" loop muted playsinline>
-      <source src="video/breast-cancer-surgery.mp4" type="video/mp4">
-    </video>
-    <video class="video-sequence" data-index="2" loop muted playsinline>
-      <source src="video/surgery.mp4" type="video/mp4">
-    </video>
-    <div class="video-overlay"></div>
-  </div>
+    <div class="cinematic-video-container" id="video-bg-layer">
+        <video class="video-sequence active" data-index="0" autoplay loop muted playsinline>
+        <source src="video/jajini.mp4" type="video/mp4">
+        </video>
+        <video class="video-sequence" data-index="1" loop muted playsinline>
+        <source src="video/breast-cancer-surgery.mp4" type="video/mp4">
+        </video>
+        <video class="video-sequence" data-index="2" loop muted playsinline>
+        <source src="video/surgery.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
   <!-- Section 0: Hero -->
  <!-- Added p-0 and w-100 to the main section -->
-<section class="content-section" id="section-0" style="min-height: 100vh; display: flex; align-items: stretch; width: 100%;">
-    <div class="container-fluid p-0 content-fade-in d-flex justify-content-start align-items-end pb-5 w-100">
-      <div class="d-flex flex-column align-items-start text-start" style="padding-left: 0; margin-left: 0;">
-        <!-- Increased heading size scope using clamp (starts larger, scales higher) -->
-        <h1 class="mb-2" style="font-family: var(--font-display); font-size: clamp(3rem, 6vw, 72px); font-weight: 700; letter-spacing: -0.02em; text-align: left; line-height: 1.1; color: #fff;">
-          Ms Jajini Susan Varghese
-        </h1>
-        
-        <!-- Increased qualifications text size to 20px -->
-        <div class="mb-4 label-caps" style="font-size: 20px; opacity: 0.9; color: #fff; letter-spacing: 0.05em; text-transform: none;">
-          MBBS, MPhil, PhD(Cantab) FRCS(Plast)
+    <section class="content-section" id="section-0" style="min-height: 100vh; display: flex; align-items: stretch; width: 100%;">
+        <div class="container-fluid p-0 content-fade-in d-flex justify-content-start align-items-end pb-5 w-100">
+        <div class="d-flex flex-column align-items-start text-start" style="padding-left: 0; margin-left: 0;">
+            <!-- Increased heading size scope using clamp (starts larger, scales higher) -->
+            <h1 class="mb-2" style="font-family: var(--font-display); font-size: clamp(3rem, 6vw, 72px); font-weight: 700; letter-spacing: -0.02em; text-align: left; line-height: 1.1; color: #fff;">
+            Ms Jajini Susan Varghese
+            </h1>
+            
+            <!-- Increased qualifications text size to 20px -->
+            <div class="mb-4 label-caps" style="font-size: 20px; opacity: 0.9; color: #fff; letter-spacing: 0.05em; text-transform: none;">
+            MBBS, MPhil, PhD(Cantab) FRCS(Plast)
+            </div>
+            
+            
+            <!-- Increased description paragraph size to 18px and max-width to 680px -->
+            
+
+            
+
+            <!-- Added Book Consultation Link Button -->
+            <div class="text-start">
+                <p class="mb-4" style="font-family: var(--font-body); font-size: 18px; line-height: 1.6; color: var(--color-text-muted); max-width: 680px; text-align: left; white-space: pre-line;">
+            Consultant Plastic Surgeon and Breast Oncology Surgeon
+            Clinical Lead Breast Surgery Services, Royal Free London NHS Trust
+            Associate Professor, University College London
+            </p>
+            <a href="contact.php" class="btn btn-outline-premium">
+                Book Consultation
+            </a>
+            </div>
+        </div>
         </div>
         
-        <!-- Increased description paragraph size to 18px and max-width to 680px -->
-        <p class="mb-4" style="font-family: var(--font-body); font-size: 18px; line-height: 1.6; color: var(--color-text-muted); max-width: 680px; text-align: left; white-space: pre-line;">
-          Consultant Plastic Surgeon and Breast Oncology Surgeon
-          Clinical Lead Breast Surgery Services, Royal Free London NHS Trust
-          Associate Professor, University College London
-        </p>
-
-        <!-- Added Book Consultation Link Button -->
-        <div class="text-start">
-          <a href="contact.php" class="btn btn-outline-premium">
-            Book Consultation
-          </a>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Centered scroll hint container -->
-    
-</section>
-
-  <!-- Section 1: Intro -->
- <section class="content-section" id="section-1" style="min-height: 100vh; display: flex; align-items: stretch; width: 100%;">
-    <div class="container-fluid p-0 content-fade-in d-flex justify-content-start align-items-end pb-5 w-100">
-      <div class="d-flex flex-column align-items-start text-start" style="padding-left: 0; margin-left: 0;">
-        <p class="mb-4" style="font-family: var(--font-body); font-size: 18px; line-height: 1.65; color: var(--color-text); max-width: 740px; font-weight: 400; text-align: left;">
-          Ms. Jajini Varghese is an award-winning, London-based plastic surgeon specialising in breast oncology surgery, oncoplastic breast surgery, breast reconstruction and aesthetic body surgery. She offers a discreet, highly personalised surgical service defined by precision and clinical excellence.
-        </p>
-        <a href="about.php" class="btn btn-outline-premium scroll-link">
-          Discover Her Journey
-        </a>
-      </div>
-    </div>
-</section>
-
-  <!-- Section 2: Ethos -->
-<section class="content-section" id="section-2" style="min-height: 100vh; display: flex; align-items: stretch; width: 100%;">
-    <div class="container-fluid p-0 content-fade-in d-flex justify-content-start align-items-end pb-5 w-100">
-      <div class="d-flex flex-column align-items-start text-start" style="padding-left: 0; margin-left: 0;">
-        <p class="mb-4" style="font-family: var(--font-body); font-size: 18px; line-height: 1.65; color: var(--color-text-muted); max-width: 740px; text-align: left;">
-          Dual-qualified in both plastic surgery and breast cancer surgery, she seamlessly combines oncological safety with advanced reconstructive expertise. Ms Varghese delivers seamless breast care, reconstruction, and aesthetic refinement in a discreet, all-female setting.
-        </p>
-        <div class="d-flex align-items-center gap-3 mt-4">
-          <span style="font-family: var(--font-body); font-size: 1rem; font-weight: 700; color: #fff;">HARLEY STREET &amp; LONDON</span>
-          <span style="width: 3rem; height: 1px; background: #fff;"></span>
-          <a href="procedures/breast-cancer/therapeutic-mammoplasty.php" class="label-caps text-white" style="font-size: 0.85rem;">VIEW SPECIALITIES</a>
-        </div>
-      </div>
-    </div>
-</section>
-
-
-
-
-
-<section class="container-fluid mainContent home-about-section" id="section-4" style="padding-top: 30px;">
-        <div class="container custom-container" id="section-4-content">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 m-auto">
-                    <div class="section-title">
-                        <p>Our One-Stop Breast Clinic is designed to provide rapid assessment, reassurance, and, where needed, timely onward care. During a single visit, you will have a consultation, expert clinical examination, state-of-the-art breast imaging, and, if required, a biopsy — all carried out in one place to minimise waiting and uncertainty.</p>
-                        <div class="button-box d-flex mt-5">
-                            <a href="diagnosis-and-prevention.php" class="btn btn-outline-premium">
-                                Diagnosis and prevention 
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        <!-- Scroll down indicator -->
+        <div class="scroll-hint-wrapper" data-target="#section-1">
+            <div class="scroll-hint-btn d-flex flex-column align-items-center">
+                <!-- <span class="mb-2 scroll-text">Scroll Down</span>
+                <div class="scroll-hint-arrow">
+                    <i class="fas fa-chevron-down arrow-icon"></i>
+                </div> -->
             </div>
         </div>
     </section>
 
+  <!-- Section 1: Intro -->
+    <section class="content-section" id="section-1" style="min-height: 100vh; display: flex; align-items: stretch; width: 100%;">
+        <div class="container-fluid p-0 content-fade-in d-flex justify-content-start align-items-end pb-5 w-100">
+            <div class="d-flex flex-column align-items-start text-start" style="padding-left: 0; margin-left: 0;">
+                <p class="mb-4" style="font-family: var(--font-body); font-size: 18px; line-height: 1.65; color: var(--color-text); max-width: 740px; font-weight: 400; text-align: left;">
+                Ms. Jajini Varghese is an award-winning, London-based plastic surgeon specialising in breast oncology surgery, oncoplastic breast surgery, breast reconstruction and aesthetic body surgery. She offers a discreet, highly personalised surgical service defined by precision and clinical excellence.
+                </p>
+                <a href="about.php" class="btn btn-outline-premium scroll-link">
+                Discover Her Journey
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll down indicator -->
+        <div class="scroll-hint-wrapper" data-target="#section-2">
+            <div class="scroll-hint-btn d-flex flex-column align-items-center">
+                <!-- <span class="mb-2 scroll-text">Discover More</span>
+                <div class="scroll-hint-arrow">
+                    <i class="fas fa-chevron-down arrow-icon"></i>
+                </div> -->
+            </div>
+        </div>
+    </section>
 
+  <!-- Section 2: Ethos -->
+    <section class="content-section" id="section-2" style="min-height: 100vh; display: flex; align-items: stretch; width: 100%;">
+        <div class="container-fluid p-0 content-fade-in d-flex justify-content-start align-items-end pb-5 w-100">
+        <div class="d-flex flex-column align-items-start text-start" style="padding-left: 0; margin-left: 0;">
+            <p class="mb-4" style="font-family: var(--font-body); font-size: 18px; line-height: 1.65; color: var(--color-text-muted); max-width: 740px; text-align: left;">
+            Dual-qualified in both plastic surgery and breast cancer surgery, she seamlessly combines oncological safety with advanced reconstructive expertise. Ms Varghese delivers seamless breast care, reconstruction, and aesthetic refinement in a discreet, all-female setting.
+            </p>
+            <div class="d-flex align-items-center gap-3 mt-4">
+            <span style="font-family: var(--font-body); font-size: 1rem; font-weight: 700; color: #fff;">HARLEY STREET &amp; LONDON</span>
+            <span style="width: 3rem; height: 1px; background: #fff;"></span>
+            <a href="procedures/breast-cancer/therapeutic-mammoplasty.php" class="label-caps text-white" style="font-size: 0.85rem;">VIEW SPECIALITIES</a>
+            </div>
+        </div>
+        </div>
+        
+        <!-- Scroll down indicator -->
+        <div class="scroll-hint-wrapper" data-target=".gallery-section">
+            <div class="scroll-hint-btn d-flex flex-column align-items-center">
+                <!-- <span class="mb-2 scroll-text">View Profile</span>
+                <div class="scroll-hint-arrow">
+                    <i class="fas fa-chevron-down arrow-icon"></i>
+                </div> -->
+            </div>
+        </div>
+    </section>
 
+    <!-- Section: Lead Clinician Profile & Accolades -->
+    <section class="py-5 bg-light mainContent gallery-section">
+        <div class="container my-lg-4">
+            <div class="row align-items-center g-4 g-lg-5">
+                
+                <!-- Left Side: Large Rounded Clinician Image Wrap -->
+                <div class="col-12 col-xl-5" data-aos="fade-up">
+                    <div class="position-relative shadow-sm rounded-4 overflow-hidden bg-white p-2">
+                        <img src="images/gallery-02.jpg" alt="Ms. Jajini Varghese" class="img-fluid rounded-4 w-100 object-fit-cover" style="max-height: 520px;">
+                    </div>
 
+                    
+                </div>
 
-
-   
-
-
-
-
-
-
-
-    <!-- section 6 -->
-    <section class="container-fluid mainContent gallery-section "  >
-
-        <div class="container custom-container">
-
-            <div class="row">
-
-                <div class="col-12">
-
-                    <div class="section-title">
-
-                        <h2 class="title" data-aos="fade-up">“I offer care that is centred on compassion, clarity, and personalised treatment. I believe every patient should feel listened to, supported, and fully informed, with care tailored to their individual needs.”</h2>
-
+                <!-- Right Side: Clinician Statement & Commitment Dashboard -->
+                <div class="col-12 col-xl-7" data-aos="fade-up">
+                    <div class="pe-xl-4">
+                        <span class="d-inline-block  fw-bold text-uppercase tracking-wider small mb-2">Lead Clinician Statement</span>
+                        
+                        <blockquote class="border-start  border-4 ps-4 my-3">
+                            <p class="fs-5 text-dark fw-normal lh-base fst-italic mb-0">
+                                “I offer care that is centred on compassion, clarity, and personalised treatment. I believe every patient should feel listened to, supported, and fully informed, with care tailored to their individual needs.”
+                            </p>
+                        </blockquote>
+                        
+                        <div class="mt-3 mb-4">
+                            <h3 class="h4 text-neutral-dark fw-bold mb-1">Ms. Jajini Varghese</h3>
+                            <p class="text-muted fw-medium small mb-0">Consultant Oncoplastic Breast Surgeon</p>
+                        </div>
+                        <div class="mt-3 text-center text-xl-start">
+                            <img src="images/awards/2025-Outstanding-Patient-Experience-Doctify-2-.png" alt="Doctify 2025 Outstanding Patient Experience Award" class="img-fluid" style="max-width: 220px; border-radius: 12px; box-shadow: 0 6px 24px rgba(0,0,0,0.13); display: block;">
+                        </div>
                     </div>
 
                 </div>
+                
+            </div>
 
+
+            <!-- Awards Infinite Museum Track -->
+            <div class="row mt-2" data-aos="fade-up">
+                <div class="col-12 px-0">
+                    <div class="awards-infinite" id="awardsInfinite" aria-label="Awards and Recognitions">
+                        <div class="awards-track" id="awardsTrack">
+
+                            <!-- Award 2025 -->
+                            <div class="award-track-item">
+                                <div class="award-badge-wrap">
+                                    <img src="images/awards/2025.png" alt="2025 Certificate of Excellence" class="award-badge-img">
+                                    <span class="award-shine-sweep" aria-hidden="true"></span>
+                                </div>
+                            </div>
+
+                            <!-- Award 2024 -->
+                            <div class="award-track-item">
+                                <div class="award-badge-wrap">
+                                    <img src="images/awards/2024.png" alt="2024 Certificate of Excellence" class="award-badge-img">
+                                    <span class="award-shine-sweep" aria-hidden="true"></span>
+                                </div>
+                            </div>
+
+                            <!-- Award 2023 -->
+                            <div class="award-track-item">
+                                <div class="award-badge-wrap">
+                                    <img src="images/awards/2023.png" alt="2023 Certificate of Excellence" class="award-badge-img">
+                                    <span class="award-shine-sweep" aria-hidden="true"></span>
+                                </div>
+                            </div>
+
+                            <!-- Award 2022 -->
+                            <div class="award-track-item">
+                                <div class="award-badge-wrap">
+                                    <img src="images/awards/2022.png" alt="2022 Certificate of Excellence" class="award-badge-img">
+                                    <span class="award-shine-sweep" aria-hidden="true"></span>
+                                </div>
+                            </div>
+
+                            <!-- Award 2021 -->
+                            <div class="award-track-item">
+                                <div class="award-badge-wrap">
+                                    <img src="images/awards/2021.png" alt="2021 Certificate of Excellence" class="award-badge-img">
+                                    <span class="award-shine-sweep" aria-hidden="true"></span>
+                                </div>
+                            </div>
+
+                        </div><!-- /awards-track -->
+                    </div><!-- /awards-infinite -->
+                </div>
             </div>
 
         </div>
+    </section>
+<!-- Main Gallery Sliders & Reviews Section -->
+    <section class="container-fluid mainContent gallery-slider-section" style="padding: 80px 0 !important;">
+        <!-- Centered Heading -->
+        <div class="container text-center mb-5" data-aos="fade-up">
+            <h2 style="font-family: var(--font-display); font-size: clamp(2rem, 4vw, 42px); font-weight: 700; color: #1e1e1e; margin-bottom: 15px;">
+                What Our Patients Say
+            </h2>
+            <div class="section-title-line" style="width: 60px; height: 3px; background-color: #b06080; margin: 0 auto 25px auto;"></div>
+            <p style="color: #64748b; max-width: 650px; margin: 0 auto; font-size: 1.05rem;">
+                Read verified reviews and patient feedback from leading medical and review portals.
+            </p>
+        </div>
 
+        <!-- 4 Column Reviews Platform Links -->
+        <div class="container mb-5" data-aos="fade-up">
+            <div class="row g-4 justify-content-center">
+                <!-- Google Reviews -->
+                <div class="col-6 col-md-3">
+                    <a href="https://www.google.com/maps/place/Jajini+Varghese/@51.5178129,-0.1492319,17z/data=!3m1!4b1!4m6!3m5!1s0x48761b598209827f:0x72bef13bfbebea1b!8m2!3d51.5178129!4d-0.146657!16s%2Fg%2F11vhd77mfl?entry=ttu&g_ep=EgoyMDI2MDYyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="review-platform-card">
+                        <div class="platform-icon google">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div class="platform-details">
+                            <h5>Google Reviews</h5>
+                            <div class="rating">
+                                <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                <span class="rating-val">5.0</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Top Doctors -->
+                <div class="col-6 col-md-3">
+                    <a href="https://www.topdoctors.co.uk/doctor/jajini-varghese/all-reviews/" target="_blank" class="review-platform-card">
+                        <div class="platform-icon top-doctors">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="platform-details">
+                            <h5>Top Doctors</h5>
+                            <div class="rating">
+                                <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                <span class="rating-val">5.0</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
+                <!-- Doctify -->
+                <div class="col-6 col-md-3">
+                    <a href="https://www.doctify.com/uk/specialist/jajini-varghese#reviews" target="_blank" class="review-platform-card">
+                        <div class="platform-icon doctify">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="platform-details">
+                            <h5>Doctify</h5>
+                            <div class="rating">
+                                <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                <span class="rating-val">5.0</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-        <div class="dual-directional-image-sliders-with-lightbox">
-
-            <!-- Top Slider -->
-
-            <div class="owl-carousel owl-theme top-slider gallery-slider popup-gallery" data-aos="fade-up">
-
-                <div class="slider-item"><a href="images/gallery-01.jpg"><img src="images/gallery-01.jpg"
-
-                            alt="gallery"></a></div>
-
-                <div class="slider-item"><a href="images/gallery-02.jpg"><img src="images/gallery-02.jpg"
-
-                            alt="gallery"></a></div>
-
-                <div class="slider-item"><a href="images/gallery-03.jpg"><img src="images/gallery-03.jpg"
-
-                            alt="gallery"></a></div>
-
-                <div class="slider-item"><a href="images/gallery-04.jpg"><img src="images/gallery-04.jpg"
-
-                            alt="gallery"></a></div>
-
-                <div class="slider-item"><a href="images/gallery-05.jpg"><img src="images/gallery-05.jpg"
-
-                            alt="gallery"></a></div>
-
-                <div class="slider-item"><a href="images/gallery-06.jpg"><img src="images/gallery-06.jpg"
-
-                            alt="gallery"></a></div>
-
+                <!-- iWantGreatCare -->
+                <div class="col-6 col-md-3">
+                    <a href="https://www.iwantgreatcare.org/doctors/miss-jajini-susan-varghese" target="_blank" class="review-platform-card">
+                        <div class="platform-icon iwantgreatcare">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="platform-details">
+                            <h5>iWantGreatCare</h5>
+                            <div class="rating">
+                                <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                <span class="rating-val">5.0</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
+        </div>
 
-
+        <!-- Dual Directional Sliders -->
+        <div class="dual-directional-image-sliders-with-lightbox mb-5">
+           
 
             <!-- Bottom Slider -->
-
-            <div class="owl-carousel owl-theme bottom-slider gallery-slider" data-aos="fade-up">
-
+            <div class="owl-carousel owl-theme bottom-slider gallery-slider mt-4" data-aos="fade-up">
                 <div class="slider-item">
-
                     <div class="text-block">
-
-                        <a href="https://www.topdoctors.co.uk/doctor/jajini-varghese/all-reviews/" target="_blank"><p>"Ms Varghese was very professional, understanding and explained my illness well. She made me feel very valued as a patient and always allowed me the space to ask everything that I was worried about."<br>- Verified patient, Doctify 
-
-                        </p></a>
-
+                        <a href="https://www.doctify.com/uk/specialist/jajini-varghese#reviews" target="_blank">
+                            <div class="review-stars mb-2" style="color: #fbc02d; font-size: 0.9rem;">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="review-text" style="font-family: var(--font-body); font-size: 0.95rem; line-height: 1.5; color: #334155; font-weight: 500; font-style: italic; margin-bottom: 20px; text-align: center;">
+                                "Ms Varghese was very professional, understanding and explained my illness well. She made me feel very valued as a patient and always allowed me the space to ask everything that I was worried about."
+                            </p>
+                            <div class="review-meta d-flex justify-content-between align-items-center w-100 pt-2" style="border-top: 1px solid rgba(248, 200, 220, 0.2); margin-top: auto;">
+                                <span class="verified-tag" style="font-size: 0.75rem; color: #10b981; font-weight: 600; display: flex; align-items: center; gap: 4px;">
+                                    <i class="fas fa-check-circle"></i> Verified Patient
+                                </span>
+                                <span class="review-date-source text-muted" style="font-size: 0.75rem; font-weight: 500;">
+                                    Doctify &bull; May 2026
+                                </span>
+                            </div>
+                        </a>
                     </div>
-
                 </div>
-
-                <div class="slider-item"><a href="images/gallery-02.jpg"><img src="images/gallery-02.jpg"
-
-                            alt="gallery"></a></div>
-
+                <div class="slider-item"><a href="images/gallery-02.jpg"><img src="images/gallery-03.jpg" alt="gallery" class="img-fluid"></a></div>
                 <div class="slider-item">
-
                     <div class="text-block">
-
-                        <a href="https://www.topdoctors.co.uk/doctor/jajini-varghese/all-reviews/" target="_blank"><p>"Dr Varghese was very kind and patient with me on top of being very knowledgeable and explaining everything in great detail. I would definitely recommend seeing her."- Verified patient, Doctify 
-
-                        </p></a>
-
+                        <a href="https://www.topdoctors.co.uk/doctor/jajini-varghese/all-reviews/" target="_blank">
+                            <div class="review-stars mb-2" style="color: #fbc02d; font-size: 0.9rem;">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="review-text" style="font-family: var(--font-body); font-size: 0.95rem; line-height: 1.5; color: #334155; font-weight: 500; font-style: italic; margin-bottom: 20px; text-align: center;">
+                                "Dr Varghese was very kind and patient with me on top of being very knowledgeable and explaining everything in great detail. I would definitely recommend seeing her."
+                            </p>
+                            <div class="review-meta d-flex justify-content-between align-items-center w-100 pt-2" style="border-top: 1px solid rgba(248, 200, 220, 0.2); margin-top: auto;">
+                                <span class="verified-tag" style="font-size: 0.75rem; color: #10b981; font-weight: 600; display: flex; align-items: center; gap: 4px;">
+                                    <i class="fas fa-check-circle"></i> Verified Patient
+                                </span>
+                                <span class="review-date-source text-muted" style="font-size: 0.75rem; font-weight: 500;">
+                                    Top Doctors &bull; April 2026
+                                </span>
+                            </div>
+                        </a>
                     </div>
-
                 </div>
-
-                <div class="slider-item"><a href="images/gallery-04.jpg"><img src="images/gallery-04.jpg"
-
-                            alt="gallery"></a></div>
-
+                <div class="slider-item"><a href="images/gallery-04.jpg"><img src="images/gallery-05.jpg" alt="gallery" class="img-fluid"></a></div>
                 <div class="slider-item">
-
                     <div class="text-block">
-
-                        <a href="https://www.topdoctors.co.uk/doctor/jajini-varghese/all-reviews/" target="_blank"><p>"Amazing doctor, her brilliant work aside, she is very cheerful and kind every time I see her... Super accommodating as well, I’m grateful to Dr Varghese for coming in to do my surgery during her time off."- Verified patient, Doctify 
-
-                        </p></a>
-
+                        <a href="https://www.doctify.com/uk/specialist/jajini-varghese#reviews" target="_blank">
+                            <div class="review-stars mb-2" style="color: #fbc02d; font-size: 0.9rem;">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="review-text" style="font-family: var(--font-body); font-size: 0.95rem; line-height: 1.5; color: #334155; font-weight: 500; font-style: italic; margin-bottom: 20px; text-align: center;">
+                                "Amazing doctor, her brilliant work aside, she is very cheerful and kind every time I see her... Super accommodating as well, I’m grateful to Dr Varghese for coming in to do my surgery during her time off."
+                            </p>
+                            <div class="review-meta d-flex justify-content-between align-items-center w-100 pt-2" style="border-top: 1px solid rgba(248, 200, 220, 0.2); margin-top: auto;">
+                                <span class="verified-tag" style="font-size: 0.75rem; color: #10b981; font-weight: 600; display: flex; align-items: center; gap: 4px;">
+                                    <i class="fas fa-check-circle"></i> Verified Patient
+                                </span>
+                                <span class="review-date-source text-muted" style="font-size: 0.75rem; font-weight: 500;">
+                                    Doctify &bull; June 2026
+                                </span>
+                            </div>
+                        </a>
                     </div>
-
                 </div>
-
-                <div class="slider-item"><a href="images/offer-sc.jpg"><img src="images/offer-sc.jpg"
-
-                            alt="gallery"></a></div>
-
-
-
+                <div class="slider-item"><a href="images/offer-sc.jpg"><img src="images/gallery-13.png" alt="gallery" class="img-fluid"></a></div>
             </div>
 
-        </div>
-
-
-
-
-
-        <div class="content-block">
-
-            <h3 class="title" data-aos="fade-up">“A cosmetic surgery operation should be a very positive and
-
-                life-enhancing event. It is however a very personal choice and understandably, there are a number of
-
-                questions that arise. It is also critical that patients are made fully aware of the expected outcome,
-
-                recovery and risks.”</h3>
-
-
-
-            <div class="button-box d-flex mt-5">
-
-                <a href="https://jajini.digibeat.in/conditions/benign-breast-disease.php" class="link">
-
-                    Conditions <i class="fas fa-caret-right"></i>
-
-                </a>
-
+             <!-- Top Slider -->
+            <div class="owl-carousel owl-theme top-slider gallery-slider popup-gallery" data-aos="fade-up">
+                <div class="slider-item"><a href="images/offer-sc.jpg"><img src="images/offer-sc.jpg" alt="gallery" class="img-fluid"></a></div>
+                <div class="slider-item"><a href="images/gallery-05.jpg"><img src="images/gallery-04.jpg" alt="gallery" class="img-fluid"></a></div>
+                <div class="slider-item"><a href="images/gallery-03.jpg"><img src="images/gallery-07.jpg" alt="gallery" class="img-fluid"></a></div>
+                
+            
+                <div class="slider-item"><a href="images/gallery-06.jpg"><img src="images/gallery-06.jpg" alt="gallery" class="img-fluid"></a></div>
             </div>
-
         </div>
 
+    
     </section>
 
      <!-- section 5 -->
-    <section class="container-fluid mainContent video-block" style="background-color: #FFF5F7 !important; padding: 100px 0 !important;">
-        <div class="container custom-container">
+    <section class="container-fluid mainContent video-block" style="background-color: #FFF5F7 !important; padding: 100px 0 !important;">  
+     <!-- Content Block & CTA -->
+    <div class="container content-block text-center my-5">
+        <p data-aos="fade-up" style="font-family: var(--font-body); font-size: clamp(1.2rem, 2.2vw, 1.55rem); font-weight: 400; line-height: 1.6; color: #1e1e1e; max-width: 950px; margin: 0 auto;">
+            “A cosmetic surgery operation should be a very positive and life-enhancing event. It is however a very personal choice and understandably, there are a number of questions that arise. It is also critical that patients are made fully aware of the expected outcome, recovery and risks.”
+        </p>
+
+        <div class="button-box d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-delay="100">
+            <a href="https://jajini.digibeat.in/conditions/benign-breast-disease.php" class="btn-premium-action">
+                Conditions <i class="fas fa-caret-right ms-2"></i>
+            </a>
+        </div>
+    </div>
+    <div class="container custom-container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
-                    <h2 class="title" style="font-family: var(--font-display); font-size: clamp(2rem, 4vw, 48px); font-weight: 700; color: #1e1e1e; margin-bottom: 15px;">
-                        Before &amp; After Showcase
+                    <h2 class="title" style="font-family: var(--font-display); font-size: clamp(1.8rem, 3.5vw, 38px); font-weight: 600; color: #1e1e1e; margin-bottom: 15px;">
+                      Explore Real Patient Outcomes
                     </h2>
-                    <p style="font-family: var(--font-body); font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto;">
-                        View actual surgical results illustrating precision reconstruction and aesthetic refinement.
-                    </p>
+                   
                 </div>
             </div>
             <div class="row">
@@ -297,48 +418,40 @@
                         <!-- Slide 1 -->
                         <div class="slider-item">
                             <div class="twentytwenty-container">
-                                <img src="images/treatments/therapeutic-mammoplasty/client-1-before.jpg" alt="Before" />
-                                <img src="images/treatments/therapeutic-mammoplasty/client-1-after.jpg" alt="After" />
+                                <img src="images/treatments/therapeutic-mammoplasty/client-1-before.jpg" alt="Before" loading="lazy" width="550" height="550" />
+                                <img src="images/treatments/therapeutic-mammoplasty/client-1-after.jpg" alt="After" loading="lazy" width="550" height="550" />
                             </div>
-                            <div class="case-label text-center mt-3">
-                                <span class="bg-premium-badge">Case 1: Therapeutic Mammoplasty</span>
-                            </div>
+                            
                         </div>
                         <!-- Slide 2 -->
                         <div class="slider-item">
                             <div class="twentytwenty-container">
-                                <img src="images/treatments/therapeutic-mammoplasty/client-2-before.jpg" alt="Before" />
-                                <img src="images/treatments/therapeutic-mammoplasty/client-2-after.jpg" alt="After" />
+                                <img src="images/treatments/therapeutic-mammoplasty/client-2-before.jpg" alt="Before" loading="lazy" width="550" height="550" />
+                                <img src="images/treatments/therapeutic-mammoplasty/client-2-after.jpg" alt="After" loading="lazy" width="550" height="550" />
                             </div>
-                            <div class="case-label text-center mt-3">
-                                <span class="bg-premium-badge">Case 2: Therapeutic Mammoplasty</span>
-                            </div>
+                            
                         </div>
                         <!-- Slide 3 -->
                         <div class="slider-item">
                             <div class="twentytwenty-container">
-                                <img src="images/treatments/therapeutic-mammoplasty/client-3-before.jpg" alt="Before" />
-                                <img src="images/treatments/therapeutic-mammoplasty/client-3-after.jpg" alt="After" />
+                                <img src="images/treatments/therapeutic-mammoplasty/client-3-before.jpg" alt="Before" loading="lazy" width="550" height="550" />
+                                <img src="images/treatments/therapeutic-mammoplasty/client-3-after.jpg" alt="After" loading="lazy" width="550" height="550" />
                             </div>
-                            <div class="case-label text-center mt-3">
-                                <span class="bg-premium-badge">Case 3: Therapeutic Mammoplasty</span>
-                            </div>
+                            
                         </div>
                         <!-- Slide 4 -->
                         <div class="slider-item">
                             <div class="twentytwenty-container">
-                                <img src="images/treatments/therapeutic-mammoplasty/client-4-before.jpg" alt="Before" />
-                                <img src="images/treatments/therapeutic-mammoplasty/client-4-after.jpg" alt="After" />
+                                <img src="images/treatments/therapeutic-mammoplasty/client-4-before.jpg" alt="Before" loading="lazy" width="550" height="550" />
+                                <img src="images/treatments/therapeutic-mammoplasty/client-4-after.jpg" alt="After" loading="lazy" width="550" height="550" />
                             </div>
-                            <div class="case-label text-center mt-3">
-                                <span class="bg-premium-badge">Case 4: Therapeutic Mammoplasty</span>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        </section>
 
 
 
@@ -350,7 +463,6 @@
 
 
 
-    <!-- section 8 -->
     
 
 
@@ -360,122 +472,194 @@
 
 
 
-    <!-- section 9 -->
-    <section class="container-fluid mainContent treatment-section" data-aos="fade-up">
+        <!-- section 9 -->
+        <section class="container-fluid mainContent treatment-section" data-aos="fade-up">
 
-        <div class="section-title text-center">
+            <div class="section-title text-center">
 
-            <h2 class="title">Excellent outcomes with state-of-the <br> art techniques</h2>
+                <h2 class="title" style="font-family: 'Cormorant Garamond', serif !important; font-weight: 500 !important; font-style: normal !important; color: #1e1e1e !important;">Excellent outcomes with state-of-the <br> art techniques</h2>
 
-        </div>
+            </div>
 
-        <div class="treatment-slider-wrapper">
+            <div class="treatment-slider-wrapper">
 
-            <div class="owl-carousel owl-theme treatment-slider">
+                <div class="owl-carousel owl-theme treatment-slider">
 
-                <div class="slider-item">
+                    <div class="slider-item">
 
-                    <div class="treament-box">
+                        <div class="treament-box">
 
-                        <div class="treatment-bg-img"><img src="images/treatments/t1.png?v=<?php echo time(); ?>" alt=""></div>
+                            <div class="treatment-bg-img"><img src="images/Implant Exchange.jpg" alt=""></div>
 
-                        <div class="text-block">Abscess incision and drainage</div>
+                            <div class="text-block">Implant Exchange</div>
 
-                        <div class="icon"><img src="images/btn-icon.svg?v=<?php echo time(); ?>" class="svg" alt="links"></div>
+                            <div class="icon"><img src="images/btn-icon.svg" class="svg" alt="links"></div>
 
 
 
-                        <a href="#" class="anchor-link"></a>
+                            <a href="#" class="anchor-link"></a>
+
+                        </div>
+                       
+
+                    </div>
+                    <div class="slider-item">
+
+                        <div class="treament-box">
+
+                            <div class="treatment-bg-img"><img src="images/treatments/t1.png" alt=""></div>
+
+                            <div class="text-block">Therapeutic Mammoplasty</div>
+
+                                <div class="icon"><img src="images/btn-icon.svg" class="svg" alt="links"></div>
+
+
+
+                                <a href="#" class="anchor-link"></a>
+
+                            </div>
+                    </div>
+
+                    <div class="slider-item">
+
+                        <div class="treament-box">
+
+                            <div class="treatment-bg-img"><img src="images/treatments/t2.png" alt=""></div>
+
+                            <div class="text-block">Breast Reduction</div>
+
+                            <div class="icon"><img src="images/btn-icon.svg" class="svg" alt="links"></div>
+
+
+
+                            <a href="#" class="anchor-link"></a>
+
+                        </div>
 
                     </div>
 
-                </div>
+                    <div class="slider-item">
 
-                <div class="slider-item">
+                        <div class="treament-box">
 
-                    <div class="treament-box">
+                            <div class="treatment-bg-img"><img src="images/treatments/t3.png" alt=""></div>
 
-                        <div class="treatment-bg-img"><img src="images/treatments/t2.png?v=<?php echo time(); ?>" alt=""></div>
+                            <div class="text-block">Breast Implant Removal</div>
 
-                        <div class="text-block">Acellular dermal matrix</div>
-
-                        <div class="icon"><img src="images/btn-icon.svg?v=<?php echo time(); ?>" class="svg" alt="links"></div>
+                            <div class="icon"><img src="images/btn-icon.svg" class="svg" alt="links"></div>
 
 
 
-                        <a href="#" class="anchor-link"></a>
+                            <a href="#" class="anchor-link"></a>
 
-                    </div>
-
-                </div>
-
-                <div class="slider-item">
-
-                    <div class="treament-box">
-
-                        <div class="treatment-bg-img"><img src="images/treatments/t3.png?v=<?php echo time(); ?>" alt=""></div>
-
-                        <div class="text-block">Axillary clearance</div>
-
-                        <div class="icon"><img src="images/btn-icon.svg?v=<?php echo time(); ?>" class="svg" alt="links"></div>
-
-
-
-                        <a href="#" class="anchor-link"></a>
+                        </div>
 
                     </div>
 
-                </div>
+                    <div class="slider-item">
 
-                <div class="slider-item">
+                        <div class="treament-box">
 
-                    <div class="treament-box">
+                            <div class="treatment-bg-img"><img src="images/treatments/t4.png" alt=""></div>
 
-                        <div class="treatment-bg-img"><img src="images/treatments/t4.png?v=<?php echo time(); ?>" alt=""></div>
+                            <div class="text-block">Breast Augmentation</div>
 
-                        <div class="text-block">Breast augmentation (enlargement)</div>
-
-                        <div class="icon"><img src="images/btn-icon.svg?v=<?php echo time(); ?>" class="svg" alt="links"></div>
+                            <div class="icon"><img src="images/btn-icon.svg" class="svg" alt="links"></div>
 
 
 
-                        <a href="#" class="anchor-link"></a>
+                            <a href="#" class="anchor-link"></a>
 
-                    </div>
-
-                </div>
-
-                <div class="slider-item">
-
-                    <div class="treament-box">
-
-                        <div class="treatment-bg-img"><img src="images/treatments/t5.png?v=<?php echo time(); ?>" alt=""></div>
-
-                        <div class="text-block">Breast consultation</div>
-
-                        <div class="icon"><img src="images/btn-icon.svg?v=<?php echo time(); ?>" class="svg" alt="links"></div>
-
-
-
-                        <a href="#" class="anchor-link"></a>
+                        </div>
 
                     </div>
 
-                </div>
+                    <div class="slider-item">
 
-                <div class="slider-item">
+                        <div class="treament-box">
 
-                    <div class="treament-box">
+                            <div class="treatment-bg-img"><img src="images/treatments/t5.png" alt=""></div>
 
-                        <div class="treatment-bg-img"><img src="images/treatments/t6.png?v=<?php echo time(); ?>" alt=""></div>
+                            <div class="text-block">Mastopexy - Breast Lift</div>
 
-                        <div class="text-block">Abscess incision and drainage</div>
-
-                        <div class="icon"><img src="images/btn-icon.svg?v=<?php echo time(); ?>" class="svg" alt="links"></div>
+                            <div class="icon"><img src="images/btn-icon.svg" class="svg" alt="links"></div>
 
 
 
-                        <a href="#" class="anchor-link"></a>
+                            <a href="#" class="anchor-link"></a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="slider-item">
+
+                        <div class="treament-box">
+
+                            <div class="treatment-bg-img"><img src="images/treatments/t6.png" alt=""></div>
+
+                            <div class="text-block">Fat Transfer or Lipomodelling</div>
+
+                            <div class="icon"><img src="images/btn-icon.svg" class="svg" alt="links"></div>
+
+
+
+                            <a href="#" class="anchor-link"></a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="slider-item">
+
+                        <div class="treament-box">
+
+                            <div class="treatment-bg-img"><img src="images/treatments/t6.png" alt=""></div>
+
+                            <div class="text-block">Chest Wall Perforator Flaps</div>
+
+                            <div class="icon"><img src="images/btn-icon.svg" class="svg" alt="links"></div>
+
+
+
+                            <a href="#" class="anchor-link"></a>
+
+                        </div>
+
+                    </div>
+                    <div class="slider-item">
+
+                        <div class="treament-box">
+
+                            <div class="treatment-bg-img"><img src="images/treatments/t6.png" alt=""></div>
+
+                            <div class="text-block">Mastectomy and Reconstructive Options</div>
+
+                            <div class="icon"><img src="images/btn-icon.svg" class="svg" alt="links"></div>
+
+
+
+                            <a href="#" class="anchor-link"></a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="slider-item">
+
+                        <div class="treament-box">
+
+                            <div class="treatment-bg-img"><img src="images/treatments/t6.png" alt=""></div>
+
+                            <div class="text-block">Breast Conserving Surgery</div>
+
+                            <div class="icon"><img src="images/btn-icon.svg" class="svg" alt="links"></div>
+
+
+
+                            <a href="#" class="anchor-link"></a>
+
+                        </div>
 
                     </div>
 
@@ -483,21 +667,19 @@
 
             </div>
 
-        </div>
 
 
+            <div class="button-box d-flex mt-5">
 
-        <div class="button-box d-flex mt-5">
+                <a href="#" class="link">
 
-            <a href="#" class="link">
+                    View all treatments <i class="fas fa-caret-right"></i>
 
-                View all treatments <i class="fas fa-caret-right"></i>
+                </a>
 
-            </a>
+            </div>
 
-        </div>
-
-    </section>
+        </section>
     
 
 
@@ -519,7 +701,7 @@
 
                     <div class="section-title">
 
-                        <h2 class="title">Book a <br> Consultation</h2>
+                        <h2 class="title" style="color: #ffffff !important;">Book a <br> Consultation</h2>
 
                     </div>
 
@@ -550,132 +732,213 @@
 
 
 
-
-
-
-
-
-    <!-- section 10 -->
-    <section class="clients-say-section testimonial-parallax-root">
-
-        <div class="content-container">
-
-            <div class="section-title">
-
-                <h2 class="title" data-aos="fade-up">Hear What Our Patients <br> Are Saying About Us</h2>
-
-            </div>
-
-            <div class="button-box d-flex">
-
-                <a href="https://www.doctify.com/uk/specialist/jajini-varghese#reviews" class="link" target="_blank">
-
-                    What Patients Share About Us <i class="fas fa-caret-right"></i>
-
-                </a>
-
-            </div>
-
-            <div class="testimonial-block" data-aos="fade-up">
-
-                <div class="testimonial">
-
-                    <div class="icon"><img src="images/quotes.svg" class="svg" alt="quotes"></div>
-
-                    <div class="quote">
-
-                        It was an absolute pleasure being treated by Ms Varghese. After a previous botched breast
-
-                        augmentation surgery . I am ecstatic with my new appearance . Not only is she an Incredibly
-
-                        skilled surgeon. My results are beyond my wildest dreams . She is incredibly personable .
-
-                    </div>
-
-                    <div class="bottom-container">
-
-                        <label class="name">J.G.</label>
-
-                        <img src="images/logo-icon-color.svg" class="svg" alt="logo icon">
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="video-container" data-aos="fade-up">
-
-            <div class="video-wrapper" style="position: relative; width: 100%; height: 100%;">
-
-                <iframe id="testimonial-youtube-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/rGlNQ9N92Lk?si=ZwZMxGXElbr2l78S&amp;start=148&amp;vq=hd1080&amp;enablejsapi=1&amp;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></iframe>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-
-
-
-
-    <!-- section 11 -->
-    <section class="container-fluid mainContent research-section">
-
-        <div class="container custom-container">
-
-            <div class="row">
-
+    <!-- Featured In Media -->
+    <section class="container-fluid mainContent media-section" style="background-color: #fcf0f4 !important; padding: 100px 0 !important;">
+        <div class="container">
+            <!-- Title Row -->
+            <div class="row mb-5" data-aos="fade-up">
                 <div class="col-12">
+                    <span class="media-eyebrow text-uppercase fw-bold tracking-wider" style="color: #b06080; font-size: 0.75rem; letter-spacing: 0.15em; display: block; margin-bottom: 8px;">Voice of Expertise</span>
+                    <h2 style="font-family: var(--font-display); font-size: clamp(2.2rem, 4.5vw, 48px); font-weight: 700; color: #1e1e1e; margin-bottom: 20px;">Featured in Media</h2>
+                    <p style="color: #64748b; max-width: 650px; font-size: 1.1rem; line-height: 1.6;">
+                        Bridging clinical excellence with public health awareness through global media collaborations and expert commentary.
+                    </p>
+                </div>
+            </div>
 
-                    <div class="section-title text-center">
-
-                        <h2 class="title" data-aos="fade-up">Research & Publications</h2>
-
+            <!-- Content Row -->
+            <div class="row g-5 align-items-stretch">
+                <!-- Left Column: Video Player & Social Links -->
+                <div class="col-12 col-lg-7" data-aos="fade-up">
+                    <div class="video-player-container position-relative shadow-sm rounded-4 overflow-hidden" style="background-color: #000; border: 1px solid rgba(0,0,0,0.05);">
+                        <div class="ratio ratio-16x9">
+                            <iframe id="media-video-iframe" src="https://www.youtube.com/embed/rGlNQ9N92Lk?si=KGipntV1Qc0zOKeS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
-
+                    
+                    <!-- Follow updates container
+                    <div class="d-flex align-items-center gap-3 mt-4 px-2">
+                        <span style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em;">Follow the updates:</span>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="media-social-btn"><i class="fas fa-globe"></i></a>
+                            <a href="#" class="media-social-btn"><i class="fas fa-share-alt"></i></a>
+                            <a href="#" class="media-social-btn"><i class="fas fa-thumbs-up"></i></a>
+                            <a href="#" class="media-social-btn"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div> -->
                 </div>
 
+                <!-- Right Column: Recent Appearances Panel -->
+                <div class="col-12 col-lg-5" data-aos="fade-up">
+                    <div class="appearances-card h-100 p-4 rounded-4" style="background-color: #ffffff; border: 1px solid rgba(248, 200, 220, 0.35);">
+                        <h4 class="mb-4" style="font-family: var(--font-display); font-weight: 700; color: #1e1e1e; font-size: 1.35rem; letter-spacing: -0.01em;">Recent Appearances</h4>
+                        <div class="appearances-list d-flex flex-column gap-3">
+                            <!-- Video Item 1 -->
+                            <div class="appearance-item active d-flex gap-3 align-items-center" data-video-url="https://www.youtube.com/embed/rGlNQ9N92Lk?si=KGipntV1Qc0zOKeS&amp;start=148" style="cursor: pointer;">
+                                    <div class="flex-shrink-0 position-relative" style="width: 100px; height: 60px; border-radius: 8px; overflow: hidden; background: #000;">
+                                        <img src="https://img.youtube.com/vi/rGlNQ9N92Lk/mqdefault.jpg" alt="Video Thumbnail" class="w-100 h-100 object-fit-cover" style="opacity: 0.85; transition: opacity 0.2s ease;">
+                                        <div class="position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center" style="width: 26px; height: 26px; border-radius: 50%; background: rgba(176, 96, 128, 0.9); box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+                                            <i class="fas fa-play text-white" style="font-size: 0.6rem; margin-left: 2px;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="item-meta d-flex justify-content-between align-items-center mb-1">
+                                            <span class="item-source font-label-xs text-uppercase fw-bold" style="color: #b06080; font-size: 0.7rem; letter-spacing: 0.05em;">FRANCE 24 English</span>
+                                            <span class="item-date text-muted" style="font-size: 0.75rem;">2025</span>
+                                        </div>
+                                        <h5 class="item-title mb-0" style="font-family: var(--font-body); font-weight: 700; font-size: 0.95rem; line-height: 1.3; color: #1e1e1e; transition: color 0.2s ease;">
+                                            Sharing Expert Insights On Breast Cancer Awareness &amp; Prevention
+                                        </h5>
+                                    </div>
+                            </div>
+
+                            <!-- Video Item 2 -->
+                            <div class="appearance-item d-flex gap-3 align-items-center" data-video-url="https://www.youtube.com/embed/5si-_vC27QI?si=KKbSfma8NTFb56wy" style="cursor: pointer;">
+                                <div class="flex-shrink-0 position-relative" style="width: 100px; height: 60px; border-radius: 8px; overflow: hidden; background: #000;">
+                                    <img src="https://img.youtube.com/vi/5si-_vC27QI/mqdefault.jpg" alt="Video Thumbnail" class="w-100 h-100 object-fit-cover" style="opacity: 0.85; transition: opacity 0.2s ease;">
+                                    <div class="position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center" style="width: 26px; height: 26px; border-radius: 50%; background: rgba(176, 96, 128, 0.9); box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+                                        <i class="fas fa-play text-white" style="font-size: 0.6rem; margin-left: 2px;"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="item-meta d-flex justify-content-between align-items-center mb-1">
+                                        <span class="item-source font-label-xs text-uppercase fw-bold" style="color: #b06080; font-size: 0.7rem; letter-spacing: 0.05em;">FRANCE 24 English</span>
+                                        <span class="item-date text-muted" style="font-size: 0.75rem;">2024</span>
+                                    </div>
+                                    <h5 class="item-title mb-0" style="font-family: var(--font-body); font-weight: 700; font-size: 0.95rem; line-height: 1.3; color: #1e1e1e; transition: color 0.2s ease;">
+                                        The Future of Personalized Medicine in Clinical Practice
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-
-            <div class="row g-3">
-
-                <div class="col-6 col-sm-6 col-md-3">
-
-                    <a class="img-box" href="#"><img src="images/Pubmed-NCBI.svg" alt=""></a>
-
-                </div>
-
-                <div class="col-6 col-sm-6 col-md-3">
-
-                    <a class="img-box" href="#"><img src="images/Google-Scholar.png" alt=""></a>
-
-                </div>
-
-                <div class="col-6 col-sm-6 col-md-3">
-
-                    <a class="img-box" href="#"><img src="images/ORCHID.svg" alt=""></a>
-
-                </div>
-
-                <div class="col-6 col-sm-6 col-md-3">
-
-                    <a class="img-box" href="#"><img src="images/ResearchGate.svg" alt=""></a>
-
-                </div>
-
-            </div>
-
         </div>
-
     </section>
+
+
+
+<!-- Research & Publications -->
+    <section class="container-fluid mainContent research-section" style="background-color: #ffffff !important; padding: 100px 0 !important;">
+        <div class="container">
+            <!-- Title Row -->
+            <div class="row mb-5 text-center" data-aos="fade-up">
+                <div class="col-12">
+                    <span class="research-eyebrow text-uppercase fw-bold tracking-wider" style="color: #b06080; font-size: 0.75rem; letter-spacing: 0.15em; display: block; margin-bottom: 8px;">Academic Contributions</span>
+                    <h2 style="font-family: var(--font-display); font-size: clamp(2.2rem, 4.5vw, 42px); font-weight: 700; color: #1e1e1e; margin-bottom: 20px;">Research & Publications</h2>
+                    <p style="color: #64748b; max-width: 650px; font-size: 1.05rem; line-height: 1.6; margin: 0 auto;">
+                        Explore our clinical studies, peer-reviewed medical publications, and global research profiles across leading scientific databases.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="row g-4 justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <!-- PubMed -->
+                <div class="col-6 col-md-3">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Jajini+Susan+Varghese" target="_blank" class="research-platform-card">
+                        <div class="logo-wrapper">
+                            <img src="images/Pubmed-NCBI.svg" alt="PubMed NCBI Logo" class="research-logo">
+                        </div>
+                    </a>
+                </div>
+                <!-- Google Scholar -->
+                <div class="col-6 col-md-3">
+                    <a href="https://scholar.google.com/citations?user=your_id_here" target="_blank" class="research-platform-card">
+                        <div class="logo-wrapper">
+                            <img src="images/Google-Scholar.png" alt="Google Scholar Logo" class="research-logo">
+                        </div>
+                    </a>
+                </div>
+                <!-- ORCID -->
+                <div class="col-6 col-md-3">
+                    <a href="https://orcid.org/0000-0002-3904-8178" target="_blank" class="research-platform-card">
+                        <div class="logo-wrapper">
+                            <img src="images/ORCHID.svg" alt="ORCID Logo" class="research-logo">
+                        </div>
+                    </a>
+                </div>
+                <!-- ResearchGate -->
+                <div class="col-6 col-md-3">
+                    <a href="https://www.researchgate.net/profile/Jajini-Varghese" target="_blank" class="research-platform-card">
+                        <div class="logo-wrapper">
+                            <img src="images/ResearchGate.svg" alt="ResearchGate Logo" class="research-logo">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script>
+    $(document).ready(function() {
+        let slideInterval;
+        const slideDuration = 8000; // 8 seconds auto-rotation
+
+        function playVideo(item, isAuto = false) {
+            $('.appearance-item').removeClass('active');
+            $(item).addClass('active');
+            
+            const videoUrl = $(item).data('video-url');
+            let separator = videoUrl.indexOf('?') !== -1 ? '&' : '?';
+            
+            // Auto-playing videos should be muted initially to satisfy browser autoplay policies,
+            // while manual user clicks play with sound.
+            let finalUrl = videoUrl + separator + 'autoplay=1';
+            if (isAuto) {
+                finalUrl += '&mute=1';
+            }
+            
+            $('#media-video-iframe').attr('src', finalUrl);
+        }
+
+        function startSlideshow() {
+            slideInterval = setInterval(function() {
+                let items = $('.appearance-item');
+                let activeIndex = items.index($('.appearance-item.active'));
+                let nextIndex = (activeIndex + 1) % items.length;
+                playVideo(items[nextIndex], true);
+            }, slideDuration);
+        }
+
+        function stopSlideshow() {
+            clearInterval(slideInterval);
+        }
+
+        // On manual playlist item click
+        $('.appearance-item').on('click', function() {
+            stopSlideshow();
+            playVideo(this, false);
+        });
+
+        // Pause slideshow on hover over player or playlist list
+        $('.video-player-container, .appearances-card').hover(
+            function() {
+                stopSlideshow();
+            },
+            function() {
+                startSlideshow();
+            }
+        );
+
+        // Start initial auto-rotation
+        startSlideshow();
+    });
+    </script>
+
+
+
+
+
+
+
+
 
 </div>
 
@@ -688,7 +951,7 @@
 <script src="plugins/twentytwenty/js/jquery.event.move.js"></script>
 <script src="plugins/twentytwenty/js/jquery.twentytwenty.js"></script>
 <!-- Main Cinematic & Overhaul Controller -->
-<script src="js/home-cinematic-v2.js?v=<?php echo time(); ?>"></script>
+<script src="js/home-cinematic-v2.js?v=<?php echo $asset_version; ?>"></script>
 
 
 </main>
@@ -696,9 +959,3 @@
 <!-- Main Content End  -->
 
 <?php include 'footer.php' ;?>
-
-
-
-
-
-

@@ -543,3 +543,18 @@ header {
 .offcanvas-backdrop {
     z-index: 9;
 }
+
+// Focus outline reset to ensure a professional look on load and click
+header,
+.offcanvas,
+.responsive-menu {
+    a, button, .nav-link, .dropdown-item, .navbar-toggler, .cta-btn, .close-btn {
+        outline: none !important;
+        box-shadow: none !important;
+        
+        &:focus, &:active, &:focus-visible {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+}

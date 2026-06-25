@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ===================== Table Content Start ======================= 
 
 Project Name 	:  Ms Jajini Varghese
@@ -157,7 +158,7 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: "Inter", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: clamp(1.25rem, 3vw, 20px);
   font-weight: 500;
   line-height: 1.4;
@@ -230,7 +231,7 @@ textarea {
 }
 
 .digits {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .page-link {
@@ -846,6 +847,71 @@ header .navbar .cta-btn:hover i svg path {
 
 .offcanvas-backdrop {
   z-index: 9;
+}
+
+header a, header button, header .nav-link, header .dropdown-item, header .navbar-toggler, header .cta-btn, header .close-btn,
+.offcanvas a,
+.offcanvas button,
+.offcanvas .nav-link,
+.offcanvas .dropdown-item,
+.offcanvas .navbar-toggler,
+.offcanvas .cta-btn,
+.offcanvas .close-btn,
+.responsive-menu a,
+.responsive-menu button,
+.responsive-menu .nav-link,
+.responsive-menu .dropdown-item,
+.responsive-menu .navbar-toggler,
+.responsive-menu .cta-btn,
+.responsive-menu .close-btn {
+  outline: none !important;
+  box-shadow: none !important;
+}
+header a:focus, header a:active, header a:focus-visible, header button:focus, header button:active, header button:focus-visible, header .nav-link:focus, header .nav-link:active, header .nav-link:focus-visible, header .dropdown-item:focus, header .dropdown-item:active, header .dropdown-item:focus-visible, header .navbar-toggler:focus, header .navbar-toggler:active, header .navbar-toggler:focus-visible, header .cta-btn:focus, header .cta-btn:active, header .cta-btn:focus-visible, header .close-btn:focus, header .close-btn:active, header .close-btn:focus-visible,
+.offcanvas a:focus,
+.offcanvas a:active,
+.offcanvas a:focus-visible,
+.offcanvas button:focus,
+.offcanvas button:active,
+.offcanvas button:focus-visible,
+.offcanvas .nav-link:focus,
+.offcanvas .nav-link:active,
+.offcanvas .nav-link:focus-visible,
+.offcanvas .dropdown-item:focus,
+.offcanvas .dropdown-item:active,
+.offcanvas .dropdown-item:focus-visible,
+.offcanvas .navbar-toggler:focus,
+.offcanvas .navbar-toggler:active,
+.offcanvas .navbar-toggler:focus-visible,
+.offcanvas .cta-btn:focus,
+.offcanvas .cta-btn:active,
+.offcanvas .cta-btn:focus-visible,
+.offcanvas .close-btn:focus,
+.offcanvas .close-btn:active,
+.offcanvas .close-btn:focus-visible,
+.responsive-menu a:focus,
+.responsive-menu a:active,
+.responsive-menu a:focus-visible,
+.responsive-menu button:focus,
+.responsive-menu button:active,
+.responsive-menu button:focus-visible,
+.responsive-menu .nav-link:focus,
+.responsive-menu .nav-link:active,
+.responsive-menu .nav-link:focus-visible,
+.responsive-menu .dropdown-item:focus,
+.responsive-menu .dropdown-item:active,
+.responsive-menu .dropdown-item:focus-visible,
+.responsive-menu .navbar-toggler:focus,
+.responsive-menu .navbar-toggler:active,
+.responsive-menu .navbar-toggler:focus-visible,
+.responsive-menu .cta-btn:focus,
+.responsive-menu .cta-btn:active,
+.responsive-menu .cta-btn:focus-visible,
+.responsive-menu .close-btn:focus,
+.responsive-menu .close-btn:active,
+.responsive-menu .close-btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .theme-footer {
@@ -4105,6 +4171,178 @@ header .navbar .cta-btn:hover i svg path {
     text-align: center;
     gap: 0;
     border: 1px solid rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Award Tab Container Custom Styling */
+.award-card {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 16px !important;
+  padding: 6px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: none !important;
+}
+@media (max-width: 1199px) {
+  .award-card {
+    width: 110px;
+    height: 110px;
+    padding: 4px !important;
+  }
+}
+@media (max-width: 575px) {
+  .award-card {
+    width: 95px;
+    height: 95px;
+    padding: 2px !important;
+  }
+}
+
+/* Image containment */
+.award-icon-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.award-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Hover State */
+.award-card:hover {
+  background: transparent !important;
+  border: none !important;
+  transform: translateY(-5px);
+  box-shadow: none !important;
+}
+
+.award-card:hover .award-img {
+  transform: scale(1.06);
+}
+
+/* ========================================================
+   Premium Award Carousel — class-driven CSS transitions
+   ======================================================== */
+/* Outer container: clips the track + edge fade mask */
+.awards-infinite {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 56px 0;
+  /* Soft edge vignette — works on any background */
+  mask-image: linear-gradient(90deg, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+/* Subtle radial halo behind center position */
+.awards-infinite::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(70, 155, 215, 0.07) 0%, rgba(70, 155, 215, 0.03) 50%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Scrolling track — JS sets translateX via style (with/without transition) */
+.awards-track {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: max-content;
+  position: relative;
+  z-index: 1;
+}
+
+/* Each slot — JS sets exact pixel width (outerWidth ÷ 5) */
+.award-track-item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Badge wrapper: CSS transitions drive all visual states ── */
+.award-badge-wrap {
+  position: relative;
+  width: 130px; /* fallback before JS measurement */
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 12px;
+  will-change: transform, filter, opacity;
+  /* ── Far / default state ── */
+  transform: scale(0.68);
+  filter: grayscale(90%);
+  opacity: 0.36;
+  /* Smooth Apple-quality easing on every state change */
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), filter 0.7s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Immediate neighbours of center ── */
+.award-badge-wrap.pos-near {
+  transform: scale(0.86);
+  filter: grayscale(40%);
+  opacity: 0.68;
+}
+
+/* ── Center spotlight ── */
+.award-badge-wrap.pos-center {
+  transform: scale(1.25);
+  filter: grayscale(0%) saturate(1.25) brightness(1.08) drop-shadow(0 0 20px rgba(70, 155, 215, 0.38)) drop-shadow(0 10px 28px rgba(55, 125, 195, 0.22)) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+  opacity: 1;
+}
+
+/* Badge image */
+.award-badge-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Shine sweep — triggered once per center entry by JS */
+.award-shine-sweep {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 15%, rgba(255, 255, 255, 0.68) 50%, transparent 85%);
+  transform: translateX(-130%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes awardShine {
+  0% {
+    transform: translateX(-130%);
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.55;
+  }
+  100% {
+    transform: translateX(140%);
+    opacity: 0;
   }
 }
 

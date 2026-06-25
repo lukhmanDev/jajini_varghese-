@@ -70,19 +70,19 @@
                     <div class="footer-social-block">
                         <h4>Follow our Socials</h4>
                         <div class="social-wrap">
-                            <a class="social-links" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <a class="social-links" href="https://www.facebook.com/people/Jajini-Varghese/100068211019536/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                 <span class="svgContainer">
                                     <span class="icon"><i class="fab fa-facebook-f text-white" style="font-size: 18px;"></i></span>
                                 </span>
                                 <span class="bg"></span>
                             </a>
-                            <a class="social-links" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <a class="social-links" href="https://www.instagram.com/jajiniplaz/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                 <span class="svgContainer">
                                     <span class="icon"><i class="fab fa-instagram text-white" style="font-size: 18px;"></i></span>
                                 </span>
                                 <span class="bg"></span>
                             </a>
-                            <a class="social-links" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <a class="social-links" href="https://www.linkedin.com/in/jajini2209/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                 <span class="svgContainer">
                                     <span class="icon"><i class="fab fa-linkedin-in text-white" style="font-size: 18px;"></i></span>
                                 </span>
@@ -118,20 +118,20 @@
 <script src="<?php echo $base_url; ?>plugins/owl-carousel/owl.carousel.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="<?php echo $base_url; ?>plugins/magnific-popup/jquery.magnific-popup.js"></script>
-<script src="<?php echo $base_url; ?>js/custom-slider.js?v=<?php echo time(); ?>"></script>
-<script src="<?php echo $base_url; ?>js/theme-script.js?v=<?php echo time(); ?>"></script>
+<script src="<?php echo $base_url; ?>js/custom-slider.js?v=<?php echo $asset_version; ?>"></script>
+<script src="<?php echo $base_url; ?>js/theme-script.js?v=<?php echo $asset_version; ?>"></script>
 
 
 
 <!-- Floating Social Sidebar (Sticky on Desktop) -->
 <div class="sticky-social-bar">
-    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">
+    <a href="https://www.facebook.com/people/Jajini-Varghese/100068211019536/" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">
         <i class="fab fa-facebook-f"></i>
     </a>
-    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">
+    <a href="https://www.instagram.com/jajiniplaz/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">
         <i class="fab fa-instagram"></i>
     </a>
-    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" aria-label="LinkedIn">
+    <a href="https://www.linkedin.com/in/jajini2209/" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" aria-label="LinkedIn">
         <i class="fab fa-linkedin-in"></i>
     </a>
     <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="social-icon x-twitter" aria-label="X (Twitter)">
