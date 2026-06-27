@@ -70,3 +70,213 @@
         display: none !important;
     }
 }
+
+/* ── Brand Showcase Section ── */
+.brand-showcase-section {
+    padding: 48px 0;
+    background: #fff;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+
+/* Outer flex wrapper: arrows + track */
+.brand-slider-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+/* Clipping viewport */
+.brand-track-container {
+    flex: 1;
+    overflow: hidden;
+    min-width: 0;
+}
+
+/* Sliding track — JS sets translateX + width */
+.brand-alignment-container {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    will-change: transform;
+    /* JS sets transition dynamically */
+}
+
+/* Each slot — JS sets exact pixel width */
+.brand-item {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* Fixed-height logo box — ensures uniform visual weight */
+.brand-logo-box {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo image — consistent sizing regardless of original dimensions */
+.brand-logo-box img {
+    max-width: 100%;
+    max-height: 52px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    filter: none;
+    opacity: 1;
+    /* GPU layer */
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* Arrow buttons */
+.brand-arrow {
+    background: none;
+    border: none;
+    font-size: 38px;
+    line-height: 1;
+    color: #bbb;
+    cursor: pointer;
+    padding: 0 12px;
+    flex-shrink: 0;
+    transition: color 0.2s ease;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.brand-arrow:hover {
+    color: #444;
+}
+
+/* ── Tablet (768px – 1199px): 3 logos ── */
+@media (max-width: 1199px) {
+    .brand-showcase-section {
+        padding: 40px 0;
+    }
+    .brand-logo-box {
+        height: 56px;
+    }
+    .brand-logo-box img {
+        max-height: 44px;
+    }
+}
+
+/* ── Mobile (< 768px): 1 logo ── */
+@media (max-width: 767px) {
+    .brand-showcase-section {
+        padding: 32px 0;
+    }
+    .brand-slider-wrapper {
+        padding: 0 8px;
+    }
+    .brand-item {
+        padding: 0 16px;
+    }
+    .brand-logo-box {
+        height: 52px;
+    }
+    .brand-logo-box img {
+        max-height: 40px;
+    }
+    .brand-arrow {
+        font-size: 32px;
+        padding: 0 6px;
+    }
+}
+
+/* ── Insurance Section Label ── */
+.brand-section-label {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #999;
+    margin: 0 0 16px 0;
+    padding-top: 10px;
+}
+
+/* ── Membership Strip ── */
+.membership-strip {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-top: 0;
+    flex-wrap: wrap;
+}
+
+.membership-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #999;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.membership-divider {
+    width: 1px;
+    height: 40px;
+    background: #e0e0e0;
+    flex-shrink: 0;
+}
+
+.membership-logos {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.membership-logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+}
+
+.membership-logo-item img {
+    max-height: 80px;
+    max-width: 220px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    opacity: 0.85;
+    transition: opacity 0.25s ease;
+}
+
+.membership-logo-item img:hover {
+    opacity: 1;
+}
+
+@media (max-width: 576px) {
+    .membership-strip {
+        gap: 16px;
+    }
+    .membership-divider {
+        display: none;
+    }
+    .membership-logos {
+        gap: 20px;
+    }
+    .membership-logo-item {
+        height: 70px;
+    }
+    .membership-logo-item img {
+        max-height: 60px;
+        max-width: 180px;
+    }
+}

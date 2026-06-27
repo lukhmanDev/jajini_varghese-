@@ -1232,8 +1232,8 @@ html.lenis body {
 
 @media (max-width: 1199px) {
   .award-card {
-    width: 110px;
-    height: 110px;
+    width: 80px;
+    height: 80px;
     padding: 4px !important;
   }
 }
@@ -1667,3 +1667,7 @@ html.lenis body {
   opacity: 0.75;
   z-index: 5;
 }
+
+
+
+/* --------------------- */

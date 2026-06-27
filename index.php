@@ -7,9 +7,9 @@
 
 
 <!-- Three.js Canvas Container -->
-<div id="three-container">
+<!-- <div id="three-container">
   <canvas id="three-bg-canvas"></canvas>
-</div>
+</div> -->
 
 
 <!-- Scroll progress dots navigation
@@ -26,10 +26,10 @@
         <source src="video/jajini.mp4" type="video/mp4">
         </video>
         <video class="video-sequence" data-index="1" loop muted playsinline>
-        <source src="video/breast-cancer-surgery.mp4" type="video/mp4">
+        <source src="video/section 2.mp4" type="video/mp4">
         </video>
         <video class="video-sequence" data-index="2" loop muted playsinline>
-        <source src="video/surgery.mp4" type="video/mp4">
+        <source src="video/section 3.mp4" type="video/mp4">
         </video>
         <div class="video-overlay"></div>
     </div>
@@ -111,9 +111,10 @@
             Dual-qualified in both plastic surgery and breast cancer surgery, she seamlessly combines oncological safety with advanced reconstructive expertise. Ms Varghese delivers seamless breast care, reconstruction, and aesthetic refinement in a discreet, all-female setting.
             </p>
             <div class="d-flex align-items-center gap-3 mt-4">
-            <span style="font-family: var(--font-body); font-size: 1rem; font-weight: 700; color: #fff;">HARLEY STREET &amp; LONDON</span>
-            <span style="width: 3rem; height: 1px; background: #fff;"></span>
-            <a href="procedures/breast-cancer/therapeutic-mammoplasty.php" class="label-caps text-white" style="font-size: 0.85rem;">VIEW SPECIALITIES</a>
+            
+            <a href="procedures.php" class="btn btn-outline-premium scroll-link">
+                View Specialities
+                </a>
             </div>
         </div>
         </div>
@@ -129,7 +130,7 @@
         </div>
     </section>
 
-    <!-- Section: Lead Clinician Profile & Accolades -->
+    <!-- Section: Ms Jajini's Quote & Accolades -->
     <section class="py-5 bg-light mainContent gallery-section">
         <div class="container my-lg-4">
             <div class="row align-items-center g-4 g-lg-5">
@@ -137,8 +138,25 @@
                 <!-- Left Side: Large Rounded Clinician Image Wrap -->
                 <div class="col-12 col-xl-5" data-aos="fade-up">
                     <div class="position-relative shadow-sm rounded-4 overflow-hidden bg-white p-2">
-                        <img src="images/gallery-02.jpg" alt="Ms. Jajini Varghese" class="img-fluid rounded-4 w-100 object-fit-cover" style="max-height: 520px;">
+                        <img src="images/doctifyjajini4.jpg" alt="Ms. Jajini Varghese" class="img-fluid rounded-4 w-100 object-fit-cover" style="max-height: 520px;">
                     </div>
+
+                     <!-- Membership Strip -->
+            <div class="row mt-2" data-aos="fade-up">
+                <div class="col-12">
+                    <div class="membership-strip">
+                        <span class="membership-label">Member of</span>
+                        <div class="membership-logos">
+                            <div class="membership-logo-item">
+                                <img src="images/membership/baaps.jpg" alt="BAAPS – British Association of Aesthetic Plastic Surgeons">
+                            </div>
+                            <div class="membership-logo-item">
+                                <img src="images/membership/bapras.jpg" alt="BAPRAS – British Association of Plastic, Reconstructive and Aesthetic Surgeons">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
                     
                 </div>
@@ -158,17 +176,9 @@
                             <h3 class="h4 text-neutral-dark fw-bold mb-1">Ms. Jajini Varghese</h3>
                             <p class="text-muted fw-medium small mb-0">Consultant Oncoplastic Breast Surgeon</p>
                         </div>
-                        <div class="mt-3 text-center text-xl-start">
-                            <img src="images/awards/2025-Outstanding-Patient-Experience-Doctify-2-.png" alt="Doctify 2025 Outstanding Patient Experience Award" class="img-fluid" style="max-width: 220px; border-radius: 12px; box-shadow: 0 6px 24px rgba(0,0,0,0.13); display: block;">
-                        </div>
-                    </div>
 
-                </div>
-                
-            </div>
-
-
-            <!-- Awards Infinite Museum Track -->
+                        <!-- ---------------- -->
+                         <!-- Awards Infinite Museum Track -->
             <div class="row mt-2" data-aos="fade-up">
                 <div class="col-12 px-0">
                     <div class="awards-infinite" id="awardsInfinite" aria-label="Awards and Recognitions">
@@ -218,6 +228,23 @@
                     </div><!-- /awards-infinite -->
                 </div>
             </div>
+
+
+                        
+                        
+                        
+                        <!-- <div class="mt-3 text-center text-xl-start">
+                            <img src="images/awards/2025-Outstanding-Patient-Experience-Doctify-2-.png" alt="Doctify 2025 Outstanding Patient Experience Award" class="img-fluid" style="max-width: 220px; border-radius: 12px; box-shadow: 0 6px 24px rgba(0,0,0,0.13); display: block;">
+                        </div> -->
+                    </div>
+
+                </div>
+                     
+            </div>
+
+
+
+           
 
         </div>
     </section>
@@ -388,7 +415,7 @@
     
     </section>
 
-     <!-- section 5 -->
+     <!-- Ms Jajini's Quote -->
     <section class="container-fluid mainContent video-block" style="background-color: #FFF5F7 !important; padding: 100px 0 !important;">  
      <!-- Content Block & CTA -->
     <div class="container content-block text-center my-5">
@@ -472,7 +499,7 @@
 
 
 
-        <!-- section 9 -->
+        <!-- Exelent Outcomes -->
         <section class="container-fluid mainContent treatment-section" data-aos="fade-up">
 
             <div class="section-title text-center">
@@ -684,7 +711,7 @@
 
 
 
-     <!-- section 7 -->
+     <!-- Book Consultation -->
     <section class="container-fluid mainContent cta-section cta-sc-home" data-aos="fade-up">
 
         <div class="cta-wrap">
@@ -870,6 +897,167 @@
             </div>
         </div>
     </section>
+
+    <section class="brand-showcase-section">
+        <p class="brand-section-label">Trusted by Leading Insurance Providers</p>
+        <div class="brand-slider-wrapper me">
+            <button class="brand-arrow brand-arrow-left" id="brandPrev" aria-label="Previous logos">&#8249;</button>
+            <div class="brand-track-container" id="brandOuter">
+                <div class="brand-alignment-container" id="brandTrack">
+                    <div class="brand-item"><div class="brand-logo-box"><img src="images/1/1.png" alt="Aetna"></div></div>
+                    <div class="brand-item"><div class="brand-logo-box"><img src="images/1/2.png" alt="Allianz Care"></div></div>
+                    <div class="brand-item"><div class="brand-logo-box"><img src="images/1/3.png" alt="Aviva"></div></div>
+                    <div class="brand-item"><div class="brand-logo-box"><img src="images/1/4.jpeg" alt="Bupa"></div></div>
+                    <div class="brand-item"><div class="brand-logo-box"><img src="images/1/5.png" alt="The Exeter"></div></div>
+                    <div class="brand-item"><div class="brand-logo-box"><img src="images/1/6.png" alt="WPA"></div></div>
+                    <div class="brand-item"><div class="brand-logo-box"><img src="images/1/7.jpeg" alt="Vitality"></div></div>
+                    <div class="brand-item"><div class="brand-logo-box"><img src="images/1/8.png" alt="Cigna"></div></div>
+                    <div class="brand-item"><div class="brand-logo-box"><img src="images/1/9.png" alt="AXA PPP"></div></div>
+                    <div class="brand-item"><div class="brand-logo-box"><img src="images/1/10.png" alt="Healix"></div></div>
+                </div>
+            </div>
+            <button class="brand-arrow brand-arrow-right" id="brandNext" aria-label="Next logos">&#8250;</button>
+        </div>
+    </section>
+
+    <script>
+    (function () {
+        var outer    = document.getElementById('brandOuter');
+        var track    = document.getElementById('brandTrack');
+        var prevBtn  = document.getElementById('brandPrev');
+        var nextBtn  = document.getElementById('brandNext');
+        if (!outer || !track) return;
+
+        var TRANS_MS  = 420;
+        var AUTO_MS   = 2800;
+        var autoTimer = null;
+        var isAnim    = false;
+        var offset    = 0;      // current translateX offset (px, always negative)
+        var itemW     = 0;      // width of one brand-item slot
+        var ORIG      = 0;      // original item count
+        var TOTAL     = 0;      // total items after cloning
+
+        // ── Responsive: how many logos visible at once ──────────
+        function visibleCount() {
+            var w = window.innerWidth;
+            if (w >= 1200) return 8;
+            if (w >= 768)  return 3;
+            return 1;
+        }
+
+        // ── Clone originals to fill a seamless buffer ───────────
+        function buildClones() {
+            // Remove any existing clones
+            var clones = track.querySelectorAll('[data-clone]');
+            clones.forEach(function(c) { track.removeChild(c); });
+
+            var items = track.querySelectorAll('.brand-item');
+            ORIG = items.length;
+
+            // Add 2 full copies after originals (for forward looping)
+            for (var s = 0; s < 2; s++) {
+                for (var i = 0; i < ORIG; i++) {
+                    var clone = items[i].cloneNode(true);
+                    clone.setAttribute('data-clone', '1');
+                    clone.setAttribute('aria-hidden', 'true');
+                    track.appendChild(clone);
+                }
+            }
+            TOTAL = track.querySelectorAll('.brand-item').length;
+        }
+
+        // ── Size every item slot to outer-width / visibleCount ──
+        function layout() {
+            var vis  = visibleCount();
+            itemW    = outer.offsetWidth / vis;
+
+            track.querySelectorAll('.brand-item').forEach(function(item) {
+                item.style.width     = itemW + 'px';
+                item.style.flexShrink = '0';
+                item.style.flexGrow   = '0';
+            });
+
+            // Reposition without animation
+            applyTransform(false);
+        }
+
+        // ── Apply translateX (animated or instant) ──────────────
+        function applyTransform(animated) {
+            track.style.transition = animated
+                ? 'transform ' + TRANS_MS + 'ms cubic-bezier(0.4,0,0.2,1)'
+                : 'none';
+            track.style.transform = 'translateX(' + offset + 'px)';
+        }
+
+        // ── Step one logo forward ────────────────────────────────
+        function stepForward() {
+            if (isAnim) return;
+            isAnim = true;
+            offset -= itemW;
+            applyTransform(true);
+
+            setTimeout(function () {
+                // If we've scrolled past the original set, snap back silently
+                if (-offset >= ORIG * itemW) {
+                    offset += ORIG * itemW;
+                    applyTransform(false);
+                    void track.offsetWidth; // reflow
+                }
+                isAnim = false;
+            }, TRANS_MS + 20);
+        }
+
+        // ── Step one logo backward ───────────────────────────────
+        function stepBack() {
+            if (isAnim) return;
+            isAnim = true;
+
+            // If already at start, silently jump to clone-set end first
+            if (offset >= 0) {
+                offset -= ORIG * itemW;
+                applyTransform(false);
+                void track.offsetWidth; // reflow
+            }
+
+            offset += itemW;
+            applyTransform(true);
+
+            setTimeout(function () { isAnim = false; }, TRANS_MS + 20);
+        }
+
+        // ── Auto-play ────────────────────────────────────────────
+        function startAuto() {
+            clearInterval(autoTimer);
+            autoTimer = setInterval(stepForward, AUTO_MS);
+        }
+
+        function resetAuto() {
+            clearInterval(autoTimer);
+            startAuto();
+        }
+
+        // ── Arrow buttons ────────────────────────────────────────
+        nextBtn.addEventListener('click', function () { stepForward(); resetAuto(); });
+        prevBtn.addEventListener('click', function () { stepBack();    resetAuto(); });
+
+        // ── Init ─────────────────────────────────────────────────
+        buildClones();
+        layout();
+        startAuto();
+
+        // Re-layout on resize (debounced)
+        var resizeTimer;
+        window.addEventListener('resize', function () {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function () {
+                clearInterval(autoTimer);
+                offset = 0;
+                layout();
+                startAuto();
+            }, 200);
+        });
+    })();
+    </script>
 
 
 

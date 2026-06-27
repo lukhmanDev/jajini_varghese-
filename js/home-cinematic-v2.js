@@ -877,7 +877,7 @@
 
     const TRANS_MS  = 700;  // CSS transition duration (ms)
     let slotW       = 0;
-    let centerIdx   = ORIG + 2; // set-B item-2 starts in center
+    let centerIdx   = ORIG;     // set-B item-0 (2025) starts in center
     let autoTimer   = null;
     let isAnimating = false;
 
@@ -924,10 +924,28 @@
       triggerShine();
 
       setTimeout(() => {
-        // Seamless loop: after one full set has scrolled past, jump back
-        if (centerIdx >= ORIG * 2 + 2) {
+        // Seamless loop: once set-B is fully past, jump back one set
+        // Cycle: 2025→2024→2023→2022→2021→(invisible jump)→2025→...
+        if (centerIdx >= ORIG * 2) {
+          const badges = Array.from(track.querySelectorAll('.award-badge-wrap'));
+
+          // 1. Freeze badge transitions so the snap is invisible
+          badges.forEach(b => {
+            b.style.transition = 'none';
+          });
+
+          // 2. Jump track position and re-assign classes — all instant
           centerIdx -= ORIG;
-          applyPosition(false);   // instant — invisible to viewer
+          applyPosition(false);
+          updateClasses();
+
+          // 3. Force a reflow so the browser commits the no-transition state
+          void track.offsetWidth;
+
+          // 4. Re-enable badge transitions for the next real slide
+          badges.forEach(b => {
+            b.style.transition = '';
+          });
         }
         isAnimating = false;
       }, TRANS_MS + 50);

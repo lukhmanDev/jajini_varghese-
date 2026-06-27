@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ===================== Table Content Start ======================= 
 
 Project Name 	:  Ms Jajini Varghese
@@ -125,11 +126,11 @@ body::-webkit-scrollbar {
   width: 5px;
 }
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5px rgba(236, 3, 3, 0.5);
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #000000;
-  outline: 1px solid #000000;
+  background-color: #ec0303;
+  outline: 1px solid #ec0303;
 }
 
 [data-scroll-container] {
@@ -479,7 +480,7 @@ header .navbar .main-menu .navbar-nav .nav-item {
 }
 header .navbar .main-menu .navbar-nav .nav-item .nav-link {
   padding: 24px 16px;
-  color: #000000;
+  color: #ec0303;
   font-size: 16px;
   font-family: "Inter", sans-serif;
   text-transform: capitalize;
@@ -512,7 +513,7 @@ header .navbar .main-menu .navbar-nav .nav-item.dropdown .nav-link i svg {
   width: 12px;
 }
 header .navbar .main-menu .navbar-nav .nav-item.dropdown .nav-link i svg path {
-  fill: #000000;
+  fill: #ec0303;
   opacity: 1;
 }
 header .navbar .main-menu .navbar-nav .nav-item.dropdown .dropdown-menu {
@@ -620,7 +621,7 @@ header .navbar .navbar-toggler .burger-menu span {
   width: 30px;
   margin: 5px 0;
   display: block;
-  background-color: #000000;
+  background-color: #ec0303;
 }
 @media (min-width: 1200px) {
   header .navbar .navbar-toggler {
@@ -630,8 +631,8 @@ header .navbar .navbar-toggler .burger-menu span {
 header .navbar .cta-btn {
   padding: 15px 30px;
   border-radius: 50px;
-  color: #000000;
-  border: 1px solid #000000;
+  color: #ec0303;
+  border: 1px solid #ec0303;
   font-family: "Inter", sans-serif;
   font-size: 15px;
   width: -moz-fit-content;
@@ -650,7 +651,7 @@ header .navbar .cta-btn i svg {
   height: 11px;
 }
 header .navbar .cta-btn i svg path {
-  fill: #000000;
+  fill: #ec0303;
   transition: all 0.3s ease;
 }
 @media (max-width: 1399px) {
@@ -831,8 +832,8 @@ header .navbar .cta-btn:hover i svg path {
 }
 .offcanvas .cta-btn:hover {
   animation: shake 0.3s linear infinite both;
-  border-color: #000000;
-  background-color: #000000;
+  border-color: #ec0303;
+  background-color: #ec0303;
   color: #ffffff;
 }
 .offcanvas .cta-btn:hover i svg path {
@@ -841,6 +842,71 @@ header .navbar .cta-btn:hover i svg path {
 
 .offcanvas-backdrop {
   z-index: 9;
+}
+
+header a, header button, header .nav-link, header .dropdown-item, header .navbar-toggler, header .cta-btn, header .close-btn,
+.offcanvas a,
+.offcanvas button,
+.offcanvas .nav-link,
+.offcanvas .dropdown-item,
+.offcanvas .navbar-toggler,
+.offcanvas .cta-btn,
+.offcanvas .close-btn,
+.responsive-menu a,
+.responsive-menu button,
+.responsive-menu .nav-link,
+.responsive-menu .dropdown-item,
+.responsive-menu .navbar-toggler,
+.responsive-menu .cta-btn,
+.responsive-menu .close-btn {
+  outline: none !important;
+  box-shadow: none !important;
+}
+header a:focus, header a:active, header a:focus-visible, header button:focus, header button:active, header button:focus-visible, header .nav-link:focus, header .nav-link:active, header .nav-link:focus-visible, header .dropdown-item:focus, header .dropdown-item:active, header .dropdown-item:focus-visible, header .navbar-toggler:focus, header .navbar-toggler:active, header .navbar-toggler:focus-visible, header .cta-btn:focus, header .cta-btn:active, header .cta-btn:focus-visible, header .close-btn:focus, header .close-btn:active, header .close-btn:focus-visible,
+.offcanvas a:focus,
+.offcanvas a:active,
+.offcanvas a:focus-visible,
+.offcanvas button:focus,
+.offcanvas button:active,
+.offcanvas button:focus-visible,
+.offcanvas .nav-link:focus,
+.offcanvas .nav-link:active,
+.offcanvas .nav-link:focus-visible,
+.offcanvas .dropdown-item:focus,
+.offcanvas .dropdown-item:active,
+.offcanvas .dropdown-item:focus-visible,
+.offcanvas .navbar-toggler:focus,
+.offcanvas .navbar-toggler:active,
+.offcanvas .navbar-toggler:focus-visible,
+.offcanvas .cta-btn:focus,
+.offcanvas .cta-btn:active,
+.offcanvas .cta-btn:focus-visible,
+.offcanvas .close-btn:focus,
+.offcanvas .close-btn:active,
+.offcanvas .close-btn:focus-visible,
+.responsive-menu a:focus,
+.responsive-menu a:active,
+.responsive-menu a:focus-visible,
+.responsive-menu button:focus,
+.responsive-menu button:active,
+.responsive-menu button:focus-visible,
+.responsive-menu .nav-link:focus,
+.responsive-menu .nav-link:active,
+.responsive-menu .nav-link:focus-visible,
+.responsive-menu .dropdown-item:focus,
+.responsive-menu .dropdown-item:active,
+.responsive-menu .dropdown-item:focus-visible,
+.responsive-menu .navbar-toggler:focus,
+.responsive-menu .navbar-toggler:active,
+.responsive-menu .navbar-toggler:focus-visible,
+.responsive-menu .cta-btn:focus,
+.responsive-menu .cta-btn:active,
+.responsive-menu .cta-btn:focus-visible,
+.responsive-menu .close-btn:focus,
+.responsive-menu .close-btn:active,
+.responsive-menu .close-btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .theme-footer {
@@ -1357,7 +1423,7 @@ header .navbar .cta-btn:hover i svg path {
 
 .title {
   font-size: 40px;
-  color: #000000;
+  color: #ec0303;
   font-weight: 500;
   line-height: 50px;
   margin: 0;
@@ -1397,7 +1463,7 @@ header .navbar .cta-btn:hover i svg path {
 }
 .home-about-section .section-title p {
   text-align: center;
-  color: #000000;
+  color: #ec0303;
   margin-bottom: 16px;
 }
 .home-about-section .section-title p:last-child {
@@ -1741,7 +1807,7 @@ header .navbar .cta-btn:hover i svg path {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(236, 3, 3, 0.5);
   z-index: -1;
 }
 .cta-section .cta-wrap .cta-content {
@@ -1970,7 +2036,7 @@ header .navbar .cta-btn:hover i svg path {
   height: 50px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.35);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(236, 3, 3, 0.5);
   backdrop-filter: blur(15px);
   display: flex;
   align-items: center;
@@ -2024,7 +2090,7 @@ header .navbar .cta-btn:hover i svg path {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 1px 10px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 10px 5px rgba(236, 3, 3, 0.15);
   transition: all 0.3s ease;
 }
 .treatment-section .treatment-slider-wrapper .treatment-slider .owl-nav button .nav-btn img {
@@ -2065,7 +2131,7 @@ header .navbar .cta-btn:hover i svg path {
   }
 }
 .research-section .img-box {
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(236, 3, 3, 0.15);
   display: block;
   padding: 30px 30px;
   border-radius: 20px;
@@ -2081,7 +2147,7 @@ header .navbar .cta-btn:hover i svg path {
 .offer-section .content-block p {
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
 }
 .offer-section .content-block p:last-child {
   margin-bottom: 0;
@@ -2121,7 +2187,7 @@ header .navbar .cta-btn:hover i svg path {
 .more-about-section .content-block p {
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
 }
 .more-about-section .content-block p:last-child {
   margin-bottom: 0;
@@ -2188,8 +2254,8 @@ header .navbar .cta-btn:hover i svg path {
   }
 }
 .pageTitle {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(236, 3, 3, 0.1);
+  border-bottom: 1px solid rgba(236, 3, 3, 0.1);
 }
 .pageTitle .breadcrumb {
   margin: 0;
@@ -2219,7 +2285,7 @@ header .navbar .cta-btn:hover i svg path {
 .page-title-section .title-block h1 {
   font-size: 50px;
   line-height: 1.2;
-  color: #000000;
+  color: #ec0303;
   font-weight: 600;
 }
 .page-title-section .title-block h1:has(+ p) {
@@ -2247,7 +2313,7 @@ header .navbar .cta-btn:hover i svg path {
 .page-title-section .title-block p {
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
   margin: 0;
 }
 @media (max-width: 1199px) {
@@ -2272,7 +2338,7 @@ header .navbar .cta-btn:hover i svg path {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(236, 3, 3, 0.1);
   z-index: -1;
 }
 .page-title-section.conditions-single-page-title .title-block {
@@ -2469,7 +2535,7 @@ header .navbar .cta-btn:hover i svg path {
 .about-page-content-section .section-title h2 {
   font-size: 40px;
   font-weight: 400;
-  color: #000000;
+  color: #ec0303;
   line-height: 1.5;
 }
 
@@ -2501,14 +2567,14 @@ header .navbar .cta-btn:hover i svg path {
 }
 .about-page-content-section-two .section-title-block .title {
   font-size: 30px;
-  color: #000000;
+  color: #ec0303;
   line-height: 1.5;
   font-weight: 500;
 }
 .about-page-content-section-two .section-title-block p {
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
 }
 @media (max-width: 991px) {
   .about-page-content-section-two .section-title-block {
@@ -2535,7 +2601,7 @@ header .navbar .cta-btn:hover i svg path {
 .about-page-content-section-three .content-block .text p {
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
 }
 .about-page-content-section-three .content-block .text p:last-child {
   margin-bottom: 0;
@@ -2638,7 +2704,7 @@ header .navbar .cta-btn:hover i svg path {
 }
 .about-page-philosophy-section .philosophy-of-care-content h2 {
   font-size: 50px;
-  color: #000000;
+  color: #ec0303;
   font-weight: 500;
   margin-bottom: 30px;
 }
@@ -2658,7 +2724,7 @@ header .navbar .cta-btn:hover i svg path {
 .about-page-philosophy-section .philosophy-of-care-content p {
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
 }
 .about-page-philosophy-section .philosophy-of-care-content p:has(+ ul) {
   margin-bottom: 30px;
@@ -2681,7 +2747,7 @@ header .navbar .cta-btn:hover i svg path {
   position: relative;
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
   padding-left: 30px;
 }
 .about-page-philosophy-section .philosophy-of-care-content ul li::before {
@@ -2709,7 +2775,7 @@ header .navbar .cta-btn:hover i svg path {
     line-height: 30px;
   }
   .about-page-philosophy-section .philosophy-of-care-content ul li:not(:last-child) {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(236, 3, 3, 0.15);
   }
 }
 .about-page-philosophy-section .philosophy-of-care-content ul:has(+ p) {
@@ -2719,11 +2785,11 @@ header .navbar .cta-btn:hover i svg path {
   .about-page-philosophy-section .philosophy-of-care-content ul {
     text-align: center;
     gap: 0;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(236, 3, 3, 0.15);
   }
 }
 .about-page-philosophy-section .img-box {
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(236, 3, 3, 0.15);
   display: block;
   padding: 30px 30px;
   border-radius: 20px;
@@ -2737,7 +2803,7 @@ header .navbar .cta-btn:hover i svg path {
   text-align: center;
   font-size: 50px;
   font-weight: 500;
-  color: #000000;
+  color: #ec0303;
   margin-bottom: 100px;
 }
 .about-page-research-section .research-content .content-block {
@@ -2757,7 +2823,7 @@ header .navbar .cta-btn:hover i svg path {
 .about-page-research-section .research-content .content-block .text p {
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
 }
 .about-page-research-section .research-content .content-block .text p:last-child {
   margin-bottom: 0;
@@ -2777,7 +2843,7 @@ header .navbar .cta-btn:hover i svg path {
 .about-page-research-section .rc-dt-block .dt-content p {
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
 }
 .about-page-research-section .rc-dt-block .dt-content p:last-child {
   margin-bottom: 0;
@@ -2792,11 +2858,11 @@ header .navbar .cta-btn:hover i svg path {
 .about-page-research-section .rc-dt-block .dt-content ul li {
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
   list-style: disc;
 }
 .about-page-research-section .img-box {
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(236, 3, 3, 0.15);
   display: block;
   padding: 30px 30px;
   border-radius: 0px;
@@ -2917,7 +2983,7 @@ header .navbar .cta-btn:hover i svg path {
 }
 .areas-of-sp-intrest .content-block .button-box .link:hover {
   background-color: #ffffff;
-  color: #000000;
+  color: #ec0303;
 }
 @media (max-width: 1399px) {
   .areas-of-sp-intrest .content-block ul {
@@ -3027,7 +3093,7 @@ header .navbar .cta-btn:hover i svg path {
     bottom: auto;
     max-width: 100%;
     padding: 40px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(236, 3, 3, 0.08);
   }
 }
 @media (max-width: 991px) {
@@ -3149,9 +3215,9 @@ header .navbar .cta-btn:hover i svg path {
   left: 20px;
   top: 20px;
   padding: 12px 20px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(236, 3, 3, 0.1);
   font-size: 14px;
-  color: #000000;
+  color: #ec0303;
   font-weight: 600;
   border-radius: 4px;
   line-height: 1;
@@ -3252,7 +3318,7 @@ header .navbar .cta-btn:hover i svg path {
 .treatment-page-content .content-block h2 {
   font-size: 30px;
   line-height: 32px;
-  color: #000000;
+  color: #ec0303;
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -3315,7 +3381,7 @@ header .navbar .cta-btn:hover i svg path {
 .treatment-page-content .content-with-image .text-block h3 {
   font-size: 30px;
   line-height: 32px;
-  color: #000000;
+  color: #ec0303;
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -3345,7 +3411,7 @@ header .navbar .cta-btn:hover i svg path {
 .treatment-page-content .icon-block h3 {
   font-size: 30px;
   line-height: 32px;
-  color: #000000;
+  color: #ec0303;
   font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 30px;
@@ -3368,7 +3434,7 @@ header .navbar .cta-btn:hover i svg path {
 }
 .treatment-page-content .icon-block .icon-wrapper .icon-item .text h4 {
   font-size: 20px;
-  color: #000000;
+  color: #ec0303;
   margin-bottom: 10px;
   line-height: normal;
   font-weight: 500;
@@ -3426,7 +3492,7 @@ header .navbar .cta-btn:hover i svg path {
 .treatment-page-content .about-jajini .bio-content h4 {
   font-size: 30px;
   line-height: 32px;
-  color: #000000;
+  color: #ec0303;
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -3481,7 +3547,7 @@ header .navbar .cta-btn:hover i svg path {
 .treatment-page-content .faq-block h3 {
   font-size: 30px;
   line-height: 32px;
-  color: #000000;
+  color: #ec0303;
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -3505,7 +3571,7 @@ header .navbar .cta-btn:hover i svg path {
   padding: 20px 30px;
   font-size: 20px;
   font-weight: 500;
-  color: #000000;
+  color: #ec0303;
 }
 @media (max-width: 1799px) {
   .treatment-page-content .faq-block .accordion .accordion-item .accordion-header .accordion-button {
@@ -3524,7 +3590,7 @@ header .navbar .cta-btn:hover i svg path {
 .treatment-page-content .faq-block .accordion .accordion-item .accordion-body p {
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
   margin: 0;
 }
 .treatment-page-content .faq-block .accordion .accordion-item .accordion-body p:has(+ ul) {
@@ -3545,7 +3611,7 @@ header .navbar .cta-btn:hover i svg path {
   position: relative;
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
   padding-left: 30px;
 }
 .treatment-page-content .faq-block .accordion .accordion-item .accordion-body ul li::before {
@@ -3573,7 +3639,7 @@ header .navbar .cta-btn:hover i svg path {
     line-height: 30px;
   }
   .treatment-page-content .faq-block .accordion .accordion-item .accordion-body ul li:not(:last-child) {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(236, 3, 3, 0.15);
   }
 }
 .treatment-page-content .faq-block .accordion .accordion-item .accordion-body ul:has(+ p) {
@@ -3583,7 +3649,7 @@ header .navbar .cta-btn:hover i svg path {
   .treatment-page-content .faq-block .accordion .accordion-item .accordion-body ul {
     text-align: center;
     gap: 0;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(236, 3, 3, 0.15);
   }
 }
 
@@ -3609,7 +3675,7 @@ header .navbar .cta-btn:hover i svg path {
   width: 4em;
   height: 1px;
   margin: 1.85em 0;
-  background-color: #000000;
+  background-color: #ec0303;
   transition: width 1.2s ease;
 }
 @media (max-width: 991px) {
@@ -3619,7 +3685,7 @@ header .navbar .cta-btn:hover i svg path {
 }
 .contact-page-content address h3 {
   font-size: 18px;
-  color: #000000;
+  color: #ec0303;
   font-family: "Inter", sans-serif;
 }
 .contact-page-content address h3 span {
@@ -3648,7 +3714,7 @@ header .navbar .cta-btn:hover i svg path {
   font-size: 20px;
   font-weight: 500;
   font-family: "Inter", sans-serif;
-  color: #000000;
+  color: #ec0303;
 }
 .contact-page-content address p:hover a,
 .contact-page-content address p:hover span {
@@ -3662,7 +3728,7 @@ header .navbar .cta-btn:hover i svg path {
 .contact-page-content .contact-form .form-control {
   background-color: #f2f2f2;
   border: none;
-  color: #000000;
+  color: #ec0303;
   border-radius: 0;
   padding: 10px 30px;
   height: 60px;
@@ -3671,7 +3737,7 @@ header .navbar .cta-btn:hover i svg path {
   font-size: 12px;
   text-transform: uppercase;
   margin-bottom: 10px;
-  color: #000000;
+  color: #ec0303;
 }
 .contact-page-content .contact-form label span {
   color: red;
@@ -3682,8 +3748,8 @@ header .navbar .cta-btn:hover i svg path {
 .contact-page-content .contact-form .button-link {
   padding: 15px 30px;
   border-radius: 50px;
-  color: #000000;
-  border: 1px solid #000000;
+  color: #ec0303;
+  border: 1px solid #ec0303;
   background-color: transparent;
   font-family: "Inter", sans-serif;
   font-size: 15px;
@@ -3704,7 +3770,7 @@ header .navbar .cta-btn:hover i svg path {
   height: 11px;
 }
 .contact-page-content .contact-form .button-link i svg path {
-  fill: black !important;
+  fill: #ec0303 !important;
 }
 .contact-page-content .contact-form .button-link:hover {
   animation: shake 0.3s linear infinite both;
@@ -3713,7 +3779,7 @@ header .navbar .cta-btn:hover i svg path {
 }
 @media (max-width: 991px) {
   .contact-page-content .contact-form {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(236, 3, 3, 0.1);
     padding-top: 30px;
   }
 }
@@ -3742,7 +3808,7 @@ header .navbar .cta-btn:hover i svg path {
   padding: 20px 30px;
   font-size: 20px;
   font-weight: 500;
-  color: #000000;
+  color: #ec0303;
 }
 @media (max-width: 1799px) {
   .faq-page-content .accordion .accordion-item .accordion-header .accordion-button {
@@ -3761,7 +3827,7 @@ header .navbar .cta-btn:hover i svg path {
 .faq-page-content .accordion .accordion-item .accordion-body p {
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
   margin: 0;
 }
 .faq-page-content .accordion .accordion-item .accordion-body p:has(+ ul) {
@@ -3782,7 +3848,7 @@ header .navbar .cta-btn:hover i svg path {
   position: relative;
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
   padding-left: 30px;
 }
 .faq-page-content .accordion .accordion-item .accordion-body ul li::before {
@@ -3810,7 +3876,7 @@ header .navbar .cta-btn:hover i svg path {
     line-height: 30px;
   }
   .faq-page-content .accordion .accordion-item .accordion-body ul li:not(:last-child) {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(236, 3, 3, 0.15);
   }
 }
 .faq-page-content .accordion .accordion-item .accordion-body ul:has(+ p) {
@@ -3820,7 +3886,7 @@ header .navbar .cta-btn:hover i svg path {
   .faq-page-content .accordion .accordion-item .accordion-body ul {
     text-align: center;
     gap: 0;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(236, 3, 3, 0.15);
   }
 }
 
@@ -3845,7 +3911,7 @@ header .navbar .cta-btn:hover i svg path {
 .diagnosis-page-content .content-block p {
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
 }
 @media (max-width: 1199px) {
   .diagnosis-page-content .content-block p {
@@ -3894,7 +3960,7 @@ header .navbar .cta-btn:hover i svg path {
 .diagnosis-page-content .image-content-block p {
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
 }
 @media (max-width: 1199px) {
   .diagnosis-page-content .image-content-block p {
@@ -3944,7 +4010,7 @@ header .navbar .cta-btn:hover i svg path {
 .conditions-single-page-content .content-block p {
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
 }
 .conditions-single-page-content .content-block p:last-child {
   margin: 0;
@@ -3967,7 +4033,7 @@ header .navbar .cta-btn:hover i svg path {
   position: relative;
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
   padding-left: 30px;
 }
 .conditions-single-page-content .content-block ul li::before {
@@ -3995,7 +4061,7 @@ header .navbar .cta-btn:hover i svg path {
     line-height: 30px;
   }
   .conditions-single-page-content .content-block ul li:not(:last-child) {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(236, 3, 3, 0.15);
   }
 }
 .conditions-single-page-content .content-block ul:has(+ p) {
@@ -4005,7 +4071,7 @@ header .navbar .cta-btn:hover i svg path {
   .conditions-single-page-content .content-block ul {
     text-align: center;
     gap: 0;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(236, 3, 3, 0.15);
   }
 }
 .conditions-single-page-content .faq-block {
@@ -4027,7 +4093,7 @@ header .navbar .cta-btn:hover i svg path {
 .conditions-single-page-content .faq-block h3 {
   font-size: 30px;
   line-height: 32px;
-  color: #000000;
+  color: #ec0303;
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -4051,7 +4117,7 @@ header .navbar .cta-btn:hover i svg path {
   padding: 20px 30px;
   font-size: 20px;
   font-weight: 500;
-  color: #000000;
+  color: #ec0303;
 }
 @media (max-width: 1799px) {
   .conditions-single-page-content .faq-block .accordion .accordion-item .accordion-header .accordion-button {
@@ -4070,7 +4136,7 @@ header .navbar .cta-btn:hover i svg path {
 .conditions-single-page-content .faq-block .accordion .accordion-item .accordion-body p {
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
   margin: 0;
 }
 .conditions-single-page-content .faq-block .accordion .accordion-item .accordion-body p:has(+ ul) {
@@ -4091,7 +4157,7 @@ header .navbar .cta-btn:hover i svg path {
   position: relative;
   font-size: 18px;
   line-height: 35px;
-  color: #000000;
+  color: #ec0303;
   padding-left: 30px;
 }
 .conditions-single-page-content .faq-block .accordion .accordion-item .accordion-body ul li::before {
@@ -4119,7 +4185,7 @@ header .navbar .cta-btn:hover i svg path {
     line-height: 30px;
   }
   .conditions-single-page-content .faq-block .accordion .accordion-item .accordion-body ul li:not(:last-child) {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(236, 3, 3, 0.15);
   }
 }
 .conditions-single-page-content .faq-block .accordion .accordion-item .accordion-body ul:has(+ p) {
@@ -4129,25 +4195,39 @@ header .navbar .cta-btn:hover i svg path {
   .conditions-single-page-content .faq-block .accordion .accordion-item .accordion-body ul {
     text-align: center;
     gap: 0;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(236, 3, 3, 0.15);
   }
 }
 
 /* Award Tab Container Custom Styling */
 .award-card {
   position: relative;
-  width: 115px;
-  height: 115px;
-  background: #ffffff;
-  border: 1px solid #e2e8f0 !important;
+  width: 130px;
+  height: 130px;
+  background: transparent !important;
+  border: none !important;
   border-radius: 16px !important;
-  padding: 8px !important;
+  padding: 6px !important;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  box-shadow: none !important;
+}
+@media (max-width: 1199px) {
+  .award-card {
+    width: 110px;
+    height: 110px;
+    padding: 4px !important;
+  }
+}
+@media (max-width: 575px) {
+  .award-card {
+    width: 95px;
+    height: 95px;
+    padding: 2px !important;
+  }
 }
 
 /* Image containment */
@@ -4164,43 +4244,135 @@ header .navbar .cta-btn:hover i svg path {
   max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  filter: grayscale(20%);
-  transition: filter 0.3s ease;
-}
-
-/* Elegant Text Label at Bottom */
-.award-year-badge {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #64748b;
-  letter-spacing: 0.5px;
-  margin-top: 4px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 /* Hover State */
 .award-card:hover {
-  background: #f8fafc;
-  border-color: #cbd5e1 !important;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+  background: transparent !important;
+  border: none !important;
+  transform: translateY(-5px);
+  box-shadow: none !important;
 }
 
 .award-card:hover .award-img {
-  filter: grayscale(0%);
+  transform: scale(1.06);
 }
 
-/* Active State (The Highlighted Premium Look) */
-.award-card.active {
-  background: #ffffff !important;
-  border-color: #0284c7 !important;
-  /* Elegant blue accent line - swap with your brand color */
-  box-shadow: 0 10px 20px -5px rgba(2, 132, 199, 0.15), 0 0 0 3px rgba(2, 132, 199, 0.1) !important;
+/* ========================================================
+   Premium Award Carousel — class-driven CSS transitions
+   ======================================================== */
+/* Outer container: clips the track + edge fade mask */
+.awards-infinite {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 56px 0;
+  /* Soft edge vignette — works on any background */
+  mask-image: linear-gradient(90deg, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 10%, black 90%, transparent 100%);
 }
 
-.award-card.active .award-img {
-  filter: grayscale(0%);
+/* Subtle radial halo behind center position */
+.awards-infinite::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(70, 155, 215, 0.07) 0%, rgba(70, 155, 215, 0.03) 50%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
 }
 
-.award-card.active .award-year-badge {
-  color: #0284c7;
+/* Scrolling track — JS sets translateX via style (with/without transition) */
+.awards-track {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  z-index: 1;
+}
+
+/* Each slot — JS sets exact pixel width (outerWidth ÷ 5) */
+.award-track-item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Badge wrapper: CSS transitions drive all visual states ── */
+.award-badge-wrap {
+  position: relative;
+  width: 130px;
+  /* fallback before JS measurement */
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  border-radius: 12px;
+  will-change: transform, filter, opacity;
+  /* ── Far / default state ── */
+  transform: scale(0.68);
+  filter: grayscale(90%);
+  opacity: 0.36;
+  /* Smooth Apple-quality easing on every state change */
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), filter 0.7s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Immediate neighbours of center ── */
+.award-badge-wrap.pos-near {
+  transform: scale(0.86);
+  filter: grayscale(40%);
+  opacity: 0.68;
+}
+
+/* ── Center spotlight ── */
+.award-badge-wrap.pos-center {
+  transform: scale(1.25);
+  filter: grayscale(0%) saturate(1.25) brightness(1.08) drop-shadow(0 0 20px rgba(70, 155, 215, 0.38)) drop-shadow(0 10px 28px rgba(55, 125, 195, 0.22)) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+  opacity: 1;
+}
+
+/* Badge image */
+.award-badge-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+/* Shine sweep — triggered once per center entry by JS */
+.award-shine-sweep {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 15%, rgba(255, 255, 255, 0.68) 50%, transparent 85%);
+  transform: translateX(-130%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes awardShine {
+  0% {
+    transform: translateX(-130%);
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.55;
+  }
+  100% {
+    transform: translateX(140%);
+    opacity: 0;
+  }
 }/*# sourceMappingURL=theme-style.css.map */
