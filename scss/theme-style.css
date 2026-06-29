@@ -629,43 +629,55 @@ header .navbar .navbar-toggler .burger-menu span {
   }
 }
 header .navbar .cta-btn {
-  padding: 15px 30px;
-  border-radius: 50px;
-  color: #ec0303;
-  border: 1px solid #ec0303;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
   width: -moz-fit-content;
   width: fit-content;
   line-height: normal;
   display: inline-flex;
   align-items: center;
   gap: 16px;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 header .navbar .cta-btn i {
   display: flex;
 }
+
 header .navbar .cta-btn i img,
 header .navbar .cta-btn i svg {
   width: 11px;
   height: 11px;
 }
+
 header .navbar .cta-btn i svg path {
-  fill: #ec0303;
-  transition: all 0.3s ease;
+  fill: #ffffff;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 @media (max-width: 1399px) {
   header .navbar .cta-btn {
     font-size: 14px;
   }
 }
+
 header .navbar .cta-btn:hover {
-  animation: shake 0.3s linear infinite both;
+  animation: none;
+  background-color: #F8C8DC;
+  color: #1E1E1E;
   border-color: #F8C8DC;
-  color: #F8C8DC;
+  transform: translateY(-2px);
 }
+
 header .navbar .cta-btn:hover i svg path {
-  fill: #F8C8DC;
+  fill: #1E1E1E;
 }
 @media (max-width: 767px) {
   header .navbar .cta-btn {
@@ -794,50 +806,62 @@ header .navbar .cta-btn:hover i svg path {
   background: #F8C8DC;
 }
 .offcanvas .cta-btn {
-  padding: 15px 30px;
-  border-radius: 0px;
+  background-color: transparent;
   color: #ffffff;
-  border: 1px solid #F8C8DC;
-  background-color: #F8C8DC;
+  border: 1px solid #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
   line-height: normal;
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 16px;
-  width: 100%;
+  border-radius: 50px;
+  padding: 12px 28px;
+  margin: 15px 30px;
+  width: calc(100% - 60px);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 @media (min-width: 768px) {
   .offcanvas .cta-btn {
     display: none;
   }
 }
+
 .offcanvas .cta-btn i {
   display: flex;
 }
+
 .offcanvas .cta-btn i img,
 .offcanvas .cta-btn i svg {
   width: 11px;
   height: 11px;
 }
+
 .offcanvas .cta-btn i svg path {
   fill: #ffffff;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 @media (max-width: 1399px) {
   .offcanvas .cta-btn {
     font-size: 14px;
   }
 }
+
 .offcanvas .cta-btn:hover {
-  animation: shake 0.3s linear infinite both;
-  border-color: #ec0303;
-  background-color: #ec0303;
-  color: #ffffff;
+  animation: none;
+  background-color: #F8C8DC;
+  color: #1E1E1E;
+  border-color: #F8C8DC;
+  transform: translateY(-2px);
 }
+
 .offcanvas .cta-btn:hover i svg path {
-  fill: #ffffff;
+  fill: #1E1E1E;
 }
 
 .offcanvas-backdrop {
@@ -1888,6 +1912,19 @@ header a:focus, header a:active, header a:focus-visible, header button:focus, he
 @media (max-width: 991px) {
   .cta-section .cta-wrap .cta-content .meta-block .cta-btn {
     margin: 0 auto;
+  }
+}
+@media (max-width: 575px) {
+  .cta-section .cta-wrap .cta-content .meta-block .cta-btn {
+    font-size: 14px;
+    padding: 10px 24px;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 20px auto 0 auto;
+    border-radius: 50px;
   }
 }
 @media (max-width: 1199px) {

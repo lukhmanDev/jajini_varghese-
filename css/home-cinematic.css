@@ -95,10 +95,11 @@ body {
 }
 
 .btn-outline-premium:hover {
-  background: var(--color-accent);
-  color: var(--color-bg);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(248, 200, 220, 0.35);
+  background: var(--color-accent) !important;
+  color: var(--color-bg) !important;
+  border-color: var(--color-accent) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 15px rgba(248, 200, 220, 0.35) !important;
 }
 
 .btn-premium-action {
@@ -1671,3 +1672,268 @@ html.lenis body {
 
 
 /* --------------------- */
+
+
+/* ===== Primary Section Heading Standardization ===== */
+.section-primary-title {
+  font-family: var(--font-display) !important;
+  font-size: clamp(2rem, 4vw, 42px) !important;
+  font-weight: 700 !important;
+  color: #1e1e1e !important;
+  margin-top: 0 !important;
+  margin-bottom: 15px !important;
+  line-height: 1.25 !important;
+  letter-spacing: normal !important;
+  text-align: inherit;
+}
+
+/* Ensure no unwanted spacing and alignment issues on mobile (below 768px) */
+@media (max-width: 767.98px) {
+  /* Center align primary titles and set mobile responsive size */
+  .section-primary-title {
+    text-align: center !important;
+    font-size: clamp(1.8rem, 5vw, 2.2rem) !important;
+  }
+
+  /* Center align general section titles/headings and subheadings across all pages */
+  .section-title h2,
+  .section-title .title,
+  .section-title p,
+  h2.title,
+  .section-title-block h2,
+  .section-title-block p,
+  .section-title-block .title {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Center align media section heading elements */
+  .media-section .row.mb-5 .col-12,
+  .media-section .row.mb-5,
+  .media-section .section-primary-title,
+  .media-section p,
+  .media-section .media-eyebrow {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Center align research section heading elements */
+  .research-section .row.mb-5 .col-12,
+  .research-section .row.mb-5,
+  .research-section .section-primary-title,
+  .research-section p,
+  .research-section .research-eyebrow {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Center align gallery slider section (What Our Patients Say) */
+  .gallery-slider-section .container,
+  .gallery-slider-section .section-primary-title,
+  .gallery-slider-section p,
+  .gallery-slider-section .section-title-line {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Center align treatment section heading (Advanced Techniques, Outstanding Results) */
+  .treatment-section .section-title,
+  .treatment-section .section-primary-title,
+  .treatment-section p {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Center align CTA section heading (Book a Consultation) */
+  .cta-sc-home .section-title,
+  .cta-sc-home .section-primary-title,
+  .cta-sc-home p {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Center align before-after section heading (Explore Real Patient Outcomes) */
+  .video-block .container.custom-container,
+  .video-block h2 {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Center align Ms Jajini Quote & Accolades (Awards & Recognition area) */
+  .gallery-section .col-xl-7,
+  .gallery-section .pe-xl-4,
+  .gallery-section h3,
+  .gallery-section p,
+  .gallery-section span {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Center blockquote in Quote & Accolades */
+  .gallery-section blockquote {
+    border-left: none !important;
+    border-top: 3px solid rgba(248, 200, 220, 0.4);
+    padding-left: 0 !important;
+    padding-top: 15px !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Centering line decorations on mobile */
+  .section-title-line {
+    margin: 0 auto 25px auto !important;
+  }
+}
+
+/* ===== Homepage CTA Section Styles (Separate styling for cta-sc-home) ===== */
+.cta-sc-home {
+  padding: 0 50px !important;
+}
+
+.cta-sc-home .cta-wrap {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  text-align: left !important;
+  padding: 100px 100px !important;
+  background-size: auto 100% !important;
+  background-repeat: no-repeat !important;
+  background-position: right center !important;
+  background-color: #b06552 !important; /* Matches background image wall color precisely */
+}
+
+/* Neutral dark overlay for homepage CTA to replace red overlay */
+.cta-sc-home .cta-wrap::before {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: -1 !important;
+}
+
+.cta-sc-home .cta-content {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+.cta-sc-home .meta-block {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+  gap: 20px !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+.cta-sc-home .meta-block .section-primary-title {
+  color: #ffffff !important;
+  margin-bottom: 0 !important;
+  text-align: left !important;
+}
+
+.cta-sc-home .meta-block p {
+  font-size: 1.15rem !important;
+  line-height: 1.6 !important;
+  color: #ffffff !important;
+  margin: 0 0 10px 0 !important;
+  max-width: 100% !important;
+  text-align: left !important;
+}
+
+.cta-sc-home .meta-block .cta-btn {
+  background-color: #F8C8DC !important;
+  color: #1E1E1E !important;
+  border: 1px solid #F8C8DC !important;
+  margin: 10px 0 0 0 !important;
+  display: inline-flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  transition: all 0.3s ease !important;
+}
+
+.cta-sc-home .meta-block .cta-btn i svg path,
+.cta-sc-home .meta-block .cta-btn i img {
+  fill: #1E1E1E !important;
+}
+
+.cta-sc-home .meta-block .cta-btn:hover {
+  background-color: #ffffff !important;
+  color: #1E1E1E !important;
+  border-color: #ffffff !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Responsive Overrides for Homepage CTA */
+@media (max-width: 1199px) {
+  .cta-sc-home {
+    padding: 0 30px !important;
+  }
+  .cta-sc-home .cta-wrap {
+    padding: 80px 50px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .cta-sc-home {
+    padding: 0 15px !important;
+  }
+  .cta-sc-home .cta-wrap {
+    padding: 60px 20px !important;
+    border-radius: 12px !important;
+    justify-content: center !important;
+    text-align: center !important;
+    background-size: cover !important;
+  }
+  .cta-sc-home .cta-content {
+    align-items: center !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+  .cta-sc-home .meta-block {
+    align-items: center !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+  .cta-sc-home .meta-block .section-primary-title {
+    text-align: center !important;
+  }
+  .cta-sc-home .meta-block p {
+    font-size: 1rem !important;
+    text-align: center !important;
+  }
+  .cta-sc-home .meta-block .cta-btn {
+    margin: 10px auto 0 auto !important;
+  }
+}
+
+/* Ensure left alignment on iPad Air and larger tablets (>= 768px) */
+@media (min-width: 768px) {
+  .cta-sc-home .cta-content,
+  .cta-sc-home .meta-block,
+  .cta-sc-home .meta-connect,
+  .cta-sc-home .meta-block p,
+  .cta-sc-home .meta-block .section-primary-title,
+  .cta-sc-home .meta-connect h3 {
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+  .cta-sc-home .meta-block .cta-btn {
+    margin: 10px 0 0 0 !important;
+  }
+}

@@ -6,18 +6,6 @@
 
 
 
-<!-- Three.js Canvas Container -->
-<!-- <div id="three-container">
-  <canvas id="three-bg-canvas"></canvas>
-</div> -->
-
-
-<!-- Scroll progress dots navigation
-<div class="scroll-progress">
-  <button type="button" class="progress-dot active" data-step="0" aria-label="Hero"></button>
-  <button type="button" class="progress-dot" data-step="1" aria-label="About"></button>
-  <button type="button" class="progress-dot" data-step="2" aria-label="Ethos"></button>
-</div> -->
 
 <div class="home-cinematic-wrapper">
   <!-- Fixed video background Layer -->
@@ -68,15 +56,7 @@
         </div>
         </div>
         
-        <!-- Scroll down indicator -->
-        <div class="scroll-hint-wrapper" data-target="#section-1">
-            <div class="scroll-hint-btn d-flex flex-column align-items-center">
-                <!-- <span class="mb-2 scroll-text">Scroll Down</span>
-                <div class="scroll-hint-arrow">
-                    <i class="fas fa-chevron-down arrow-icon"></i>
-                </div> -->
-            </div>
-        </div>
+
     </section>
 
   <!-- Section 1: Intro -->
@@ -92,15 +72,7 @@
             </div>
         </div>
         
-        <!-- Scroll down indicator -->
-        <div class="scroll-hint-wrapper" data-target="#section-2">
-            <div class="scroll-hint-btn d-flex flex-column align-items-center">
-                <!-- <span class="mb-2 scroll-text">Discover More</span>
-                <div class="scroll-hint-arrow">
-                    <i class="fas fa-chevron-down arrow-icon"></i>
-                </div> -->
-            </div>
-        </div>
+
     </section>
 
   <!-- Section 2: Ethos -->
@@ -119,19 +91,21 @@
         </div>
         </div>
         
-        <!-- Scroll down indicator -->
-        <div class="scroll-hint-wrapper" data-target=".gallery-section">
-            <div class="scroll-hint-btn d-flex flex-column align-items-center">
-                <!-- <span class="mb-2 scroll-text">View Profile</span>
-                <div class="scroll-hint-arrow">
-                    <i class="fas fa-chevron-down arrow-icon"></i>
-                </div> -->
-            </div>
-        </div>
+
     </section>
 
     <!-- Section: Ms Jajini's Quote & Accolades -->
     <section class="py-5 bg-light mainContent gallery-section">
+
+      <div class="container text-center mb-5" data-aos="fade-up">
+            <h2 class="section-primary-title">
+               Meet Your Surgeon: Jajini Varghese
+            </h2>
+            <div class="section-title-line" style="width: 60px; height: 3px; background-color: #b06080; margin: 0 auto 25px auto;"></div>
+           
+        </div>
+
+
         <div class="container my-lg-4">
             <div class="row align-items-center g-4 g-lg-5">
                 
@@ -252,7 +226,7 @@
     <section class="container-fluid mainContent gallery-slider-section" style="padding: 80px 0 !important;">
         <!-- Centered Heading -->
         <div class="container text-center mb-5" data-aos="fade-up">
-            <h2 style="font-family: var(--font-display); font-size: clamp(2rem, 4vw, 42px); font-weight: 700; color: #1e1e1e; margin-bottom: 15px;">
+            <h2 class="section-primary-title">
                 What Our Patients Say
             </h2>
             <div class="section-title-line" style="width: 60px; height: 3px; background-color: #b06080; margin: 0 auto 25px auto;"></div>
@@ -314,12 +288,12 @@
 
                 <!-- iWantGreatCare -->
                 <div class="col-6 col-md-3">
-                    <a href="https://www.iwantgreatcare.org/doctors/miss-jajini-susan-varghese" target="_blank" class="review-platform-card">
+                    <a href="https://www.myhealthspecialist.com/specialists/jajini-varghese" target="_blank" class="review-platform-card">
                         <div class="platform-icon iwantgreatcare">
                             <i class="fas fa-check-circle"></i>
                         </div>
                         <div class="platform-details">
-                            <h5>iWantGreatCare</h5>
+                            <h5>myhealthspecialist</h5>
                             <div class="rating">
                                 <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
                                 <span class="rating-val">5.0</span>
@@ -432,9 +406,10 @@
     <div class="container custom-container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
-                    <h2 class="title" style="font-family: var(--font-display); font-size: clamp(1.8rem, 3.5vw, 38px); font-weight: 600; color: #1e1e1e; margin-bottom: 15px;">
+                    <h2 class="section-primary-title">
                       Explore Real Patient Outcomes
                     </h2>
+                    <div class="section-title-line" style="width: 60px; height: 3px; background-color: #b06080; margin: 0 auto 25px auto;"></div>
                    
                 </div>
             </div>
@@ -504,7 +479,8 @@
 
             <div class="section-title text-center">
 
-                <h2 class="title" style="font-family: 'Cormorant Garamond', serif !important; font-weight: 500 !important; font-style: normal !important; color: #1e1e1e !important;">Excellent outcomes with state-of-the <br> art techniques</h2>
+                <h2 class="section-primary-title">Advanced Techniques, Outstanding Results</h2>
+                <div class="section-title-line" style="width: 60px; height: 3px; background-color: #b06080; margin: 0 auto 25px auto;"></div>
 
             </div>
 
@@ -534,7 +510,7 @@
 
                         <div class="treament-box">
 
-                            <div class="treatment-bg-img"><img src="images/treatments/t1.png" alt=""></div>
+                            <div class="treatment-bg-img"><img src="images/treatments/therapeutic-mammoplasty/Breast-Reduction-1-1024x764.jpeg" alt=""></div>
 
                             <div class="text-block">Therapeutic Mammoplasty</div>
 
@@ -551,7 +527,7 @@
 
                         <div class="treament-box">
 
-                            <div class="treatment-bg-img"><img src="images/treatments/t2.png" alt=""></div>
+                            <div class="treatment-bg-img"><img src="images/Breast Reduction.jpg" alt=""></div>
 
                             <div class="text-block">Breast Reduction</div>
 
@@ -605,7 +581,7 @@
 
                         <div class="treament-box">
 
-                            <div class="treatment-bg-img"><img src="images/treatments/t5.png" alt=""></div>
+                            <div class="treatment-bg-img"><img src="images/Mastopexy - Breast Lift.jpg" alt=""></div>
 
                             <div class="text-block">Mastopexy - Breast Lift</div>
 
@@ -641,7 +617,7 @@
 
                         <div class="treament-box">
 
-                            <div class="treatment-bg-img"><img src="images/treatments/t6.png" alt=""></div>
+                            <div class="treatment-bg-img"><img src="images/treatments/t5.png" alt=""></div>
 
                             <div class="text-block">Chest Wall Perforator Flaps</div>
 
@@ -658,7 +634,7 @@
 
                         <div class="treament-box">
 
-                            <div class="treatment-bg-img"><img src="images/treatments/t6.png" alt=""></div>
+                            <div class="treatment-bg-img"><img src="images/treatments/Mastectomy and Reconstructive Options.jpg" alt=""></div>
 
                             <div class="text-block">Mastectomy and Reconstructive Options</div>
 
@@ -676,7 +652,7 @@
 
                         <div class="treament-box">
 
-                            <div class="treatment-bg-img"><img src="images/treatments/t6.png" alt=""></div>
+                            <div class="treatment-bg-img"><img src="images/treatments/therapeutic-mammoplasty/breast-lift-1024x683.jpg" alt=""></div>
 
                             <div class="text-block">Breast Conserving Surgery</div>
 
@@ -718,38 +694,36 @@
 
             <div class="bg-img">
 
-                <img src="images/cta-background.jpg" alt="footer background">
+                <img src="images/4.jpg" alt="footer background">
 
             </div>
 
-            <div class="cta-content">
-
-                <div class="meta-block">
-
-                    <div class="section-title">
-
-                        <h2 class="title" style="color: #ffffff !important;">Book a <br> Consultation</h2>
-
+            <div class="cta-content container-fluid px-0">
+                <div class="row align-items-center">
+                    <!-- Left Column: Primary details & connection -->
+                    <div class="col-12 col-xl-5">
+                        <div class="meta-block">
+                            <div class="section-title">
+                                <h2 class="section-primary-title" style="color: #ffffff !important;">Book a <br> Consultation</h2>
+                            </div>
+                            <p>Treat yourself to a beautiful appearance and <br>the self-confidence to match.</p>
+                            <a class="cta-btn" href="#">Book a consultation <i><img src="images/btn-icon.svg" class="svg" alt="call"></i></a>
+                        </div>
+                        <div style="height:30px"></div>
+                        <div class="meta-connect">
+                            <h3>Send us a message or give us a call. <br> we're eager to help however we can!</h3>
+                        </div>
                     </div>
 
-                    <p>Treat yourself to a beautiful appearance and <br>the self-confidence to match.</p>
-
-
-
-                    <a class="cta-btn" href="#">Book a consultation <i><img src="images/btn-icon.svg" class="svg"
-
-                                alt="call"></i></a>
-
+                    <!-- Middle Column: New text (visible only on large screens) -->
+                    <div class="col-xl-3 d-none d-xl-block">
+                        <div style="border-left: 2px solid #F8C8DC; padding-left: 20px; font-style: italic;">
+                            <p class="mb-0" style="font-size: 1.05rem; line-height: 1.7; font-family: var(--font-body); color: #ffffff !important; opacity: 0.85;">
+                                "Combining expertise in breast cancer and plastic surgery, Ms Varghese delivers seamless breast care, reconstruction, and aesthetic refinement in a discreet, all-female setting."
+                            </p>
+                        </div>
+                    </div>
                 </div>
-
-
-
-                <div class="meta-connect">
-
-                    <h3>Send us a message or give us a call. <br> we're eager to help however we can!</h3>
-
-                </div>
-
             </div>
 
         </div>
@@ -766,7 +740,8 @@
             <div class="row mb-5" data-aos="fade-up">
                 <div class="col-12">
                     <span class="media-eyebrow text-uppercase fw-bold tracking-wider" style="color: #b06080; font-size: 0.75rem; letter-spacing: 0.15em; display: block; margin-bottom: 8px;">Voice of Expertise</span>
-                    <h2 style="font-family: var(--font-display); font-size: clamp(2.2rem, 4.5vw, 48px); font-weight: 700; color: #1e1e1e; margin-bottom: 20px;">Featured in Media</h2>
+                    <h2 class="section-primary-title">Featured in Media</h2>
+                    <div class="section-title-line" style="width: 60px; height: 3px; background-color: #b06080; margin: 0 auto 25px auto;"></div>
                     <p style="color: #64748b; max-width: 650px; font-size: 1.1rem; line-height: 1.6;">
                         Bridging clinical excellence with public health awareness through global media collaborations and expert commentary.
                     </p>
@@ -779,20 +754,11 @@
                 <div class="col-12 col-lg-7" data-aos="fade-up">
                     <div class="video-player-container position-relative shadow-sm rounded-4 overflow-hidden" style="background-color: #000; border: 1px solid rgba(0,0,0,0.05);">
                         <div class="ratio ratio-16x9">
-                            <iframe id="media-video-iframe" src="https://www.youtube.com/embed/rGlNQ9N92Lk?si=KGipntV1Qc0zOKeS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe id="media-video-iframe" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: none;"></iframe>
+                            <video id="media-video-local" src="video/Ms Jajini Varghese - Consultant Oncoplastic Breast Surgeon_1080p.mp4" playsinline controls autoplay style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
                         </div>
                     </div>
-                    
-                    <!-- Follow updates container
-                    <div class="d-flex align-items-center gap-3 mt-4 px-2">
-                        <span style="font-family: var(--font-body); font-size: 0.85rem; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em;">Follow the updates:</span>
-                        <div class="d-flex gap-2">
-                            <a href="#" class="media-social-btn"><i class="fas fa-globe"></i></a>
-                            <a href="#" class="media-social-btn"><i class="fas fa-share-alt"></i></a>
-                            <a href="#" class="media-social-btn"><i class="fas fa-thumbs-up"></i></a>
-                            <a href="#" class="media-social-btn"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div> -->
+
                 </div>
 
                 <!-- Right Column: Recent Appearances Panel -->
@@ -800,8 +766,27 @@
                     <div class="appearances-card h-100 p-4 rounded-4" style="background-color: #ffffff; border: 1px solid rgba(248, 200, 220, 0.35);">
                         <h4 class="mb-4" style="font-family: var(--font-display); font-weight: 700; color: #1e1e1e; font-size: 1.35rem; letter-spacing: -0.01em;">Recent Appearances</h4>
                         <div class="appearances-list d-flex flex-column gap-3">
-                            <!-- Video Item 1 -->
-                            <div class="appearance-item active d-flex gap-3 align-items-center" data-video-url="https://www.youtube.com/embed/rGlNQ9N92Lk?si=KGipntV1Qc0zOKeS&amp;start=148" style="cursor: pointer;">
+                            <!-- Video Item 1: Local Video -->
+                            <div class="appearance-item active d-flex gap-3 align-items-center" data-video-type="local" data-video-url="video/Ms Jajini Varghese - Consultant Oncoplastic Breast Surgeon_1080p.mp4" style="cursor: pointer;">
+                                <div class="flex-shrink-0 position-relative" style="width: 100px; height: 60px; border-radius: 8px; overflow: hidden; background: #000;">
+                                    <img src="images/doctifyjajini4.jpg" alt="Video Thumbnail" class="w-100 h-100 object-fit-cover" style="opacity: 0.85; transition: opacity 0.2s ease;">
+                                    <div class="position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center" style="width: 26px; height: 26px; border-radius: 50%; background: rgba(176, 96, 128, 0.9); box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+                                        <i class="fas fa-play text-white" style="font-size: 0.6rem; margin-left: 2px;"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="item-meta d-flex justify-content-between align-items-center mb-1">
+                                        <span class="item-source font-label-xs text-uppercase fw-bold" style="color: #b06080; font-size: 0.7rem; letter-spacing: 0.05em;">Featured Video</span>
+                                        <span class="item-date text-muted" style="font-size: 0.75rem;">2026</span>
+                                    </div>
+                                    <h5 class="item-title mb-0" style="font-family: var(--font-body); font-weight: 700; font-size: 0.95rem; line-height: 1.3; color: #1e1e1e; transition: color 0.2s ease;">
+                                        Ms Jajini Varghese - Consultant Oncoplastic Breast Surgeon
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <!-- Video Item 2 -->
+                            <div class="appearance-item d-flex gap-3 align-items-center" data-video-type="youtube" data-video-url="https://www.youtube.com/embed/rGlNQ9N92Lk?si=KGipntV1Qc0zOKeS&amp;start=148" style="cursor: pointer;">
                                     <div class="flex-shrink-0 position-relative" style="width: 100px; height: 60px; border-radius: 8px; overflow: hidden; background: #000;">
                                         <img src="https://img.youtube.com/vi/rGlNQ9N92Lk/mqdefault.jpg" alt="Video Thumbnail" class="w-100 h-100 object-fit-cover" style="opacity: 0.85; transition: opacity 0.2s ease;">
                                         <div class="position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center" style="width: 26px; height: 26px; border-radius: 50%; background: rgba(176, 96, 128, 0.9); box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
@@ -819,8 +804,8 @@
                                     </div>
                             </div>
 
-                            <!-- Video Item 2 -->
-                            <div class="appearance-item d-flex gap-3 align-items-center" data-video-url="https://www.youtube.com/embed/5si-_vC27QI?si=KKbSfma8NTFb56wy" style="cursor: pointer;">
+                            <!-- Video Item 3 -->
+                            <div class="appearance-item d-flex gap-3 align-items-center" data-video-type="youtube" data-video-url="https://www.youtube.com/embed/5si-_vC27QI?si=KKbSfma8NTFb56wy" style="cursor: pointer;">
                                 <div class="flex-shrink-0 position-relative" style="width: 100px; height: 60px; border-radius: 8px; overflow: hidden; background: #000;">
                                     <img src="https://img.youtube.com/vi/5si-_vC27QI/mqdefault.jpg" alt="Video Thumbnail" class="w-100 h-100 object-fit-cover" style="opacity: 0.85; transition: opacity 0.2s ease;">
                                     <div class="position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center" style="width: 26px; height: 26px; border-radius: 50%; background: rgba(176, 96, 128, 0.9); box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
@@ -853,7 +838,7 @@
             <div class="row mb-5 text-center" data-aos="fade-up">
                 <div class="col-12">
                     <span class="research-eyebrow text-uppercase fw-bold tracking-wider" style="color: #b06080; font-size: 0.75rem; letter-spacing: 0.15em; display: block; margin-bottom: 8px;">Academic Contributions</span>
-                    <h2 style="font-family: var(--font-display); font-size: clamp(2.2rem, 4.5vw, 42px); font-weight: 700; color: #1e1e1e; margin-bottom: 20px;">Research & Publications</h2>
+                    <h2 class="section-primary-title">Research & Publications</h2>
                     <p style="color: #64748b; max-width: 650px; font-size: 1.05rem; line-height: 1.6; margin: 0 auto;">
                         Explore our clinical studies, peer-reviewed medical publications, and global research profiles across leading scientific databases.
                     </p>
@@ -899,7 +884,21 @@
     </section>
 
     <section class="brand-showcase-section">
-        <p class="brand-section-label">Trusted by Leading Insurance Providers</p>
+        <div class="container mb-4">
+            <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-center text-center text-md-start">
+                
+                <!-- Left Side: Heading -->
+                <div class="col-12 col-md-5 mb-3 mb-md-0">
+                    <h2 class="mb-0" style="text-align: inherit; margin: 0; font-family: var(--font-body); font-size: 1rem; font-weight: 600; color: #1e1e1e; letter-spacing: normal; text-transform: none;">Trusted by Leading Insurance Providers</h2>
+                </div>
+
+                <!-- Right Side: Description -->
+                <div class="col-12 col-md-6">
+                    <p class="mb-0" style="font-size: 1rem; line-height: 1.5; font-family: var(--font-body); color: #64748b !important;">We accept a wide range of major insurance plans to ensure your path to care is seamless, straightforward, and stress-free.</p>
+                </div>
+
+            </div>
+        </div>
         <div class="brand-slider-wrapper me">
             <button class="brand-arrow brand-arrow-left" id="brandPrev" aria-label="Previous logos">&#8249;</button>
             <div class="brand-track-container" id="brandOuter">
@@ -1068,25 +1067,56 @@
     $(document).ready(function() {
         let slideInterval;
         const slideDuration = 8000; // 8 seconds auto-rotation
+        let slideshowEnabled = true;
 
         function playVideo(item, isAuto = false) {
             $('.appearance-item').removeClass('active');
             $(item).addClass('active');
             
+            const videoType = $(item).data('video-type');
             const videoUrl = $(item).data('video-url');
-            let separator = videoUrl.indexOf('?') !== -1 ? '&' : '?';
-            
-            // Auto-playing videos should be muted initially to satisfy browser autoplay policies,
-            // while manual user clicks play with sound.
-            let finalUrl = videoUrl + separator + 'autoplay=1';
-            if (isAuto) {
-                finalUrl += '&mute=1';
+            const localVideo = document.getElementById('media-video-local');
+            const iframe = document.getElementById('media-video-iframe');
+
+            if (videoType === 'local') {
+                // Pause YouTube by emptying src
+                $(iframe).hide().attr('src', '');
+                $(localVideo).show();
+
+                // Play local video
+                localVideo.muted = false;
+                const playPromise = localVideo.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch(error => {
+                        console.log("Playback failed/blocked:", error);
+                        if (isAuto) {
+                            localVideo.muted = true;
+                            localVideo.play().catch(e => console.log(e));
+                        }
+                    });
+                }
+            } else {
+                // YouTube video
+                localVideo.pause();
+                $(localVideo).hide();
+                $(iframe).show();
+
+                let separator = videoUrl.indexOf('?') !== -1 ? '&' : '?';
+                let finalUrl = videoUrl + separator + 'autoplay=1';
+                if (isAuto) {
+                    finalUrl += '&mute=1';
+                }
+                $(iframe).attr('src', finalUrl);
             }
-            
-            $('#media-video-iframe').attr('src', finalUrl);
         }
 
         function startSlideshow() {
+            if (!slideshowEnabled) return;
+            // Don't auto-rotate if the local video is currently active/playing
+            const activeItem = $('.appearance-item.active');
+            if (activeItem.data('video-type') === 'local') return;
+
+            clearInterval(slideInterval);
             slideInterval = setInterval(function() {
                 let items = $('.appearance-item');
                 let activeIndex = items.index($('.appearance-item.active'));
@@ -1101,6 +1131,7 @@
 
         // On manual playlist item click
         $('.appearance-item').on('click', function() {
+            slideshowEnabled = false; // Disable slideshow auto-rotation upon user interaction
             stopSlideshow();
             playVideo(this, false);
         });
@@ -1115,7 +1146,56 @@
             }
         );
 
-        // Start initial auto-rotation
+        // Pause auto-slideshow rotation when local video is played or paused, and ensure sound is on
+        $('#media-video-local').on('play pause', function(e) {
+            slideshowEnabled = false;
+            stopSlideshow();
+            if (e.type === 'play') {
+                this.muted = false;
+                this.volume = 1.0;
+            }
+        });
+
+        // IntersectionObserver for autoplaying local video when scrolled into view
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5 // Trigger when 50% of the player is visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                const localVideo = document.getElementById('media-video-local');
+                const activeItem = $('.appearance-item.active');
+                
+                if (entry.isIntersecting) {
+                    // Only start playing if local video is active
+                    if (activeItem.data('video-type') === 'local') {
+                        localVideo.muted = false;
+                        const playPromise = localVideo.play();
+                        if (playPromise !== undefined) {
+                            playPromise.catch(error => {
+                                console.log("Autoplay unmuted blocked on scroll. Retrying muted...", error);
+                                localVideo.muted = true;
+                                localVideo.play().catch(e => console.log(e));
+                            });
+                        }
+                    }
+                } else {
+                    // Pause if scrolled out of view
+                    if (activeItem.data('video-type') === 'local' && !localVideo.paused) {
+                        localVideo.pause();
+                    }
+                }
+            });
+        }, observerOptions);
+
+        const target = document.querySelector('.video-player-container');
+        if (target) {
+            observer.observe(target);
+        }
+
+        // Start initial auto-rotation if the active item is not local
         startSlideshow();
     });
     </script>
@@ -1132,8 +1212,7 @@
 
 
 
-<!-- CDNs for Three.js and Lenis -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<!-- CDNs for Lenis -->
 <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 <!-- twentytwenty plugin -->
 <script src="plugins/twentytwenty/js/jquery.event.move.js"></script>

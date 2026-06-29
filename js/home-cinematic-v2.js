@@ -161,6 +161,7 @@
   let mouseX = 0, mouseY = 0, targetMouseX = 0, targetMouseY = 0;
 
   function initThreeBackground() {
+    if (typeof THREE === 'undefined') return;
     const canvas = document.getElementById('three-bg-canvas');
     const container = document.getElementById('three-container');
     if (!canvas || !container) return;
@@ -538,38 +539,64 @@
           0
         );
       } else {
-        // Fallback ScrollTrigger when section-4 is commented out/removed
-        ScrollTrigger.create({
-          trigger: '#section-2',
-          start: 'bottom bottom',
-          end: '+=10%',
-          scrub: 1,
-          onEnter: () => {
-            gsap.set(videoBg, { className: 'cinematic-video-container gsap-active' });
-            gsap.to('#three-container', { opacity: 1, duration: 0.3 });
-          },
-          onLeave: () => {
-            // Hide cinematic assets once we leave dark area
-            gsap.to([videoBg, '#three-container'], { opacity: 0, visibility: 'hidden', duration: 0.4 });
-            // Hide progress dots
-            gsap.to('.scroll-progress', { opacity: 0, pointerEvents: 'none', duration: 0.4 });
-            // Pause videos
-            videos.forEach(v => v.pause());
-          },
-          onEnterBack: () => {
-            // Re-show cinematic assets
-            gsap.to([videoBg, '#three-container'], { opacity: 1, visibility: 'visible', duration: 0.4 });
-            // Re-show progress dots
-            gsap.to('.scroll-progress', { opacity: 1, pointerEvents: 'auto', duration: 0.4 });
-            // Play active index video
-            if (videos[activeIndex]) {
-              videos[activeIndex].play().catch(() => { });
+        // Fallback GSAP Timeline when section-4 is commented out/removed
+        const fallbackTimeline = gsap.timeline({
+          scrollTrigger: {
+            trigger: '#section-2',
+            start: 'bottom bottom',
+            end: '+=100%',
+            scrub: 1,
+            onEnter: () => {
+              gsap.set(videoBg, { className: 'cinematic-video-container gsap-active' });
+              gsap.to('#three-container', { opacity: 1, duration: 0.3 });
+            },
+            onLeave: () => {
+              // Hide cinematic assets once we leave dark area
+              gsap.to([videoBg, '#three-container'], { opacity: 0, visibility: 'hidden', duration: 0.4 });
+              // Hide progress dots
+              gsap.to('.scroll-progress', { opacity: 0, pointerEvents: 'none', duration: 0.4 });
+              // Pause videos
+              videos.forEach(v => v.pause());
+            },
+            onEnterBack: () => {
+              // Re-show cinematic assets
+              gsap.to([videoBg, '#three-container'], { opacity: 1, visibility: 'visible', duration: 0.4 });
+              // Re-show progress dots
+              gsap.to('.scroll-progress', { opacity: 1, pointerEvents: 'auto', duration: 0.4 });
+              // Play active index video
+              if (videos[activeIndex]) {
+                videos[activeIndex].play().catch(() => { });
+              }
+            },
+            onLeaveBack: () => {
+              gsap.set(videoBg, { className: 'cinematic-video-container' });
             }
-          },
-          onLeaveBack: () => {
-            gsap.set(videoBg, { className: 'cinematic-video-container' });
           }
         });
+
+        // 1. Fade out video background & three container
+        fallbackTimeline.to([videoBg, '#three-container'], {
+          opacity: 0,
+          ease: 'none'
+        }, 0);
+
+        // 2. Change text color of #section-2 p to dark charcoal (#1e1e1e)
+        fallbackTimeline.fromTo('#section-2 p', {
+          color: '#cccccc'
+        }, {
+          color: '#1e1e1e',
+          ease: 'none'
+        }, 0);
+
+        // 3. Change button text color and border color to dark charcoal (#1e1e1e)
+        fallbackTimeline.fromTo('#section-2 .btn-outline-premium', {
+          color: '#F8C8DC',
+          borderColor: '#F8C8DC'
+        }, {
+          color: '#1e1e1e',
+          borderColor: '#1e1e1e',
+          ease: 'none'
+        }, 0);
       }
     }
 
