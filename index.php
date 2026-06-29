@@ -777,7 +777,7 @@
                                 <div class="flex-grow-1">
                                     <div class="item-meta d-flex justify-content-between align-items-center mb-1">
                                         <span class="item-source font-label-xs text-uppercase fw-bold" style="color: #b06080; font-size: 0.7rem; letter-spacing: 0.05em;">Featured Video</span>
-                                        <span class="item-date text-muted" style="font-size: 0.75rem;">2026</span>
+                                        <span class="item-date text-muted" style="font-size: 0.75rem;">2023</span>
                                     </div>
                                     <h5 class="item-title mb-0" style="font-family: var(--font-body); font-weight: 700; font-size: 0.95rem; line-height: 1.3; color: #1e1e1e; transition: color 0.2s ease;">
                                         Ms Jajini Varghese - Consultant Oncoplastic Breast Surgeon
